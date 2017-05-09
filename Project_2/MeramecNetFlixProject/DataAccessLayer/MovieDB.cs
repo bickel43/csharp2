@@ -1,0 +1,256 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+//The System.Data.SqlClient reference is needed to access SQL Server database
+using System.Data.SqlClient;
+using MeramecNetFlixProject.BusinessObjects;
+
+namespace MeramecNetFlixProject.DataAccessLayer
+{
+    //Instructions:
+    //#1:Rename the SkeletonTableNameDB class to the Specific Database Table name. i.e. CustomerDB
+    //#2:The SkeletonTableNameDB class should inherit the superclass called AccessDataSQLServer
+    //#3: The AccessDataSQLServer class must be created. See Project#2 Specs for class definition.
+
+    //public class SkeletonTableNameDB
+    public static class MovieDB
+    {
+        //public static List<MovieClass> GetMovies()
+        //{
+        //    //Change the MyCustomObject name to your customer business object that is returning data from the specific table
+        //    List<MovieClass> objMovieList = new List<MovieClass>();
+        //    string SQLStatement = String.Empty;
+
+        //    //Pre-step: Replace the general object parameter with the appropriate data type parameter for retrieving a specific item from the specific database table. 
+
+        //    //Change the MyCustomObject references  to your customer business object
+
+        //    //Step #1: Add code to call the appropriate method from the inherited AccessDataSQLServer class
+        //    //To return a database connection object
+        //    SqlConnection myConnection = AccessDataSQLServer.GetConnection();
+
+        //    //Step #2: Code logic to create appropriate SQL Server objects calls
+        //    //         Code logic to retrieve data from database
+        //    //         Add Try..Catch appropriate block and throw exception back to calling program            
+
+        //    SqlCommand objCommand;
+        //    SqlDataReader movieReader;
+
+        //    try
+        //    {
+        //        using (myConnection)
+        //        {
+        //            //Open the DB connection
+        //            myConnection.Open();
+
+        //            //Define SQL statement
+        //            //SQLStatement = "select number, joindate, member_status, firstname, lastname, email from Member";
+        //            SQLStatement = "select * from Movie";
+
+        //            //Create a command object with the sql statement
+        //            using (objCommand = new SqlCommand(SQLStatement, myConnection))
+        //            {
+
+        //                //Execute the SQL and return a datareader object
+        //                using (movieReader = objCommand.ExecuteReader(System.Data.CommandBehavior.CloseConnection))
+        //                {
+        //                    while (movieReader.Read())
+        //                    {
+        //                        MovieClass objReturnMovie = new MovieClass();
+
+        //                        objReturnMovie.MovieNumber = Convert.ToInt32(movieReader["movie_number"]);
+
+        //                        objMovieList.Add(objReturnMovie);
+        //                    }
+        //                }
+        //            }
+        //            //Close the connection
+        //            myConnection.Close();
+        //        }
+        //    }
+        //    catch (SqlException)
+        //    {
+
+        //    }
+
+        //    //Step #3: Return the objtemp variable back to the calling UI 
+        //    return objMovieList;
+        //}
+
+        //public static bool AddMovie(MovieClass myMovie)
+        //{
+        //    //Pre-step: Replace the general object parameter with the appropriate business class object that you are using to insert data in the underline database table 
+        //    string SQLStatement = String.Empty;
+
+        //    //Step #1: Add code to call the appropriate method from the inherited AccessDataSQLServer class
+        //    //To return a database connection object
+        //    SqlConnection myConnection = AccessDataSQLServer.GetConnection();
+
+        //    //Step #2: Code logic to create appropriate SQL Server objects calls
+        //    //         Cod Logic to retrieve data from database
+        //    //         Add Try..Catch appropriate block and throw exception back to calling program
+
+        //    SqlCommand objCommand = null;
+        //    int rowsAffected = 0;
+
+        //    string sqlString;
+
+        //    try
+        //    {
+        //        using (myConnection)
+        //        {
+        //            myConnection.Open();
+        //            sqlString = "INSERT into Member values (@number,@joindate,@firstname,@lastname,@address,@city,@state,@zipcode,@phone,@member_status,@login_name,@password,@email,@contact_method,@subscription_id,@photo)";
+
+        //            using (objCommand = new SqlCommand(sqlString, myConnection))
+        //            {
+        //                objCommand.Parameters.AddWithValue("@number", myMovie.MemberNumber);
+
+        //                rowsAffected = objCommand.ExecuteNonQuery();
+        //            }
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw ex;
+        //    }
+
+        //    finally
+        //    {
+        //        if (myConnection != null)
+        //        {
+        //            myConnection.Close();
+        //        }
+        //    }
+
+        //    //Step #3: return false if record was not added successfully
+        //    //         return true if record was added successfully  
+
+        //    return true; //temporary return until your code is fully flushed out. Remove or comment out this line
+        //}
+
+        //public static bool UpdateMovie(MovieClass myMovie)
+        //{
+        //    //Pre-step: Replace the general object parameter with the appropriate business class object that you are using to insert data in the underline database table 
+        //    string SQLStatement = String.Empty;
+
+        //    //Step #1: Add code to call the appropriate method from the inherited AccessDataSQLServer class
+        //    //To return a database connection object
+        //    SqlConnection myConnection = AccessDataSQLServer.GetConnection();
+
+        //    //Step #2: Code logic to create appropriate SQL Server objects calls
+        //    //         Cod Logic to retrieve data from database
+        //    //         Add Try..Catch appropriate block and throw exception back to calling program
+
+        //    SqlCommand objCommand = null;
+        //    int rowsAffected = 0;
+
+        //    string sqlString;
+
+        //    try
+        //    {
+        //        using (myConnection)
+        //        {
+        //            myConnection.Open();
+        //            sqlString = "UPDATE Member set firstname=@firstname,lastname=@lastname,address=@address,city=@city,state=@state,zipcode=@zipcode,phone=@phone,login_name=@login_name,password=@password,email=@email where number=@number";
+        //            //add joindate=@joindate, to the SQL string
+        //            //sqlString = "UPDATE Member set firstname=@firstname where number=@number";
+
+        //            using (objCommand = new SqlCommand(sqlString, myConnection))
+        //            {
+        //                objCommand.Parameters.AddWithValue("@number", myMovie.MemberNumber);
+        //                //objCommand.Parameters.AddWithValue("@joindate", myMovie.JoinDate.ToString());
+        //                objCommand.Parameters.AddWithValue("@firstname", myMovie.Firstname);
+        //                objCommand.Parameters.AddWithValue("@lastname", myMovie.Lastname.ToString());
+        //                objCommand.Parameters.AddWithValue("@address", myMovie.Address.ToString());
+        //                objCommand.Parameters.AddWithValue("@city", myMovie.City.ToString());
+        //                objCommand.Parameters.AddWithValue("@state", myMovie.State.ToString());
+        //                objCommand.Parameters.AddWithValue("@zipcode", myMovie.Zipcode.ToString());
+        //                objCommand.Parameters.AddWithValue("@phone", myMovie.Phone.ToString());
+        //                ////objCommand.Parameters.AddWithValue("@member_status", myMovie.MemberStatus);
+        //                objCommand.Parameters.AddWithValue("@login_name", myMovie.LoginName.ToString());
+        //                objCommand.Parameters.AddWithValue("@password", myMovie.Password.ToString());
+        //                objCommand.Parameters.AddWithValue("@email", myMovie.Email.ToString());
+        //                ////objCommand.Parameters.AddWithValue("@contact_method", myMovie.ContactMethod);
+        //                //objCommand.Parameters.AddWithValue("@subscription_id", myMovie.SubscriptionID.ToString());
+        //                objCommand.Parameters.AddWithValue("@photo", "photo");
+
+        //                rowsAffected = objCommand.ExecuteNonQuery();
+        //            }
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw ex;
+        //    }
+
+        //    finally
+        //    {
+        //        if (myMovie != null)
+        //        {
+        //            myConnection.Close();
+        //        }
+        //    }
+        //    return true;
+        //}
+
+        //public static bool DeleteMovie(MovieClass myMovie)
+        //{
+        //    //Pre-step: Replace the general object parameter with the appropriate business class object that you are using to insert data in the underline database table 
+        //    string SQLStatement = String.Empty;
+
+        //    //Step #1: Add code to call the appropriate method from the inherited AccessDataSQLServer class
+        //    //To return a database connection object
+        //    SqlConnection myConnection = AccessDataSQLServer.GetConnection();
+
+        //    //Step #2: Code logic to create appropriate SQL Server objects calls
+        //    //         Cod Logic to retrieve data from database
+        //    //         Add Try..Catch appropriate block and throw exception back to calling program
+
+        //    SqlCommand objCommand = null;
+        //    int rowsAffected = 0;
+
+        //    string sqlString;
+
+        //    try
+        //    {
+        //        using (myConnection)
+        //        {
+        //            myConnection.Open();
+        //            sqlString = "DELETE Member where number=@number";
+
+        //            //Added this for some testing...
+        //            //sqlString = "INSERT into Member values (@firstname,@lastname)";
+
+
+        //            using (objCommand = new SqlCommand(sqlString, myConnection))
+        //            {
+        //                objCommand.Parameters.AddWithValue("@number", myMovie.MemberNumber);
+
+        //                rowsAffected = objCommand.ExecuteNonQuery();
+        //            }
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw ex;
+        //    }
+
+        //    finally
+        //    {
+        //        if (myConnection != null)
+        //        {
+        //            myConnection.Close();
+        //        }
+        //    }
+
+        //    //Step #3: return false if record was not added successfully
+        //    //         return true if record was added successfully  
+
+        //    return true; //temporary return until your code is fully flushed out. Remove or comment out this line
+        //}
+
+    }
+}
