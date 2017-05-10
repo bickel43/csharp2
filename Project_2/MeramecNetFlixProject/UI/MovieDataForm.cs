@@ -22,6 +22,7 @@ namespace MeramecNetFlixProject
         private void MovieData_Load(object sender, EventArgs e)
         {
             movieDataViewGrid.DataSource = MovieDB.GetMovies();
+            movieNumberTextBox.Text = Convert.ToString(movieDataViewGrid.RowCount + 1);
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
