@@ -89,7 +89,9 @@ namespace MeramecNetFlixProject.UI
             }
             else
             {
-                MessageBox.Show("Login Failed, Please check your Username and Password!");
+                MessageBox.Show("Wrong Username and/or Password!", "Login Failed!", MessageBoxButtons.OK, MessageBoxIcon.Error,
+                       MessageBoxDefaultButton.Button1);
+                return;
             }
         }
         

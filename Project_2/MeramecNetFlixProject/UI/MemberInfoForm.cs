@@ -9,7 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MeramecNetFlixProject.DataAccessLayer;
 using MeramecNetFlixProject.BusinessObjects;
-// A comment
+using MeramecNetFlixProject.UI;
+
 
 namespace MeramecNetFlixProject
 {
@@ -306,6 +307,13 @@ namespace MeramecNetFlixProject
                 MessageBox.Show("Error when updating user. \nMake sure a record is selected.","User Update Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 //throw;
             }
+        }
+
+        private void userReportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UserReport report = new UserReport();
+            report.ShowDialog();
+            report = null;
         }
     }
 }
