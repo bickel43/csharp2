@@ -60,6 +60,9 @@ namespace MeramecNetFlixProject.UI
                         if (memberReader.Read())
                         {
                             loginAccepted = true;
+
+                            //MainMenu enableButtons = new MainMenu();
+                            //enableButtons.EnableMainMenuButtons();
                         }
                     }
 

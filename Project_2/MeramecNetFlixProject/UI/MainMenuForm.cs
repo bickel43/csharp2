@@ -18,7 +18,7 @@ namespace MeramecNetFlixProject
             InitializeComponent();
         }
 
-        private void manageAccountButton_Click(object sender, EventArgs e)
+        public void manageAccountButton_Click(object sender, EventArgs e)
         {
             MemberInfo openMemberInfo = new MemberInfo();
             openMemberInfo.ShowDialog();
@@ -30,7 +30,7 @@ namespace MeramecNetFlixProject
             openSignIn.ShowDialog();   
         }
 
-        private void browseButton_Click(object sender, EventArgs e)
+        public void browseButton_Click(object sender, EventArgs e)
         {
             MovieData openMovieData = new MovieData();
             openMovieData.ShowDialog();
@@ -39,6 +39,25 @@ namespace MeramecNetFlixProject
         private void exitMovieButton_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        public void MainMenu_Load(object sender, EventArgs e)
+        {
+            DisableMainMenuButtons();
+        }
+
+        public void DisableMainMenuButtons()
+        {
+            browseButton.Visible = false;
+            manageAccountButton.Visible = false;
+            helpButton.Visible = false;
+        }
+
+        public void EnableMainMenuButtons()
+        {
+            browseButton.Visible = true;
+            manageAccountButton.Visible = true;
+            helpButton.Visible = true;
         }
     }
 }
