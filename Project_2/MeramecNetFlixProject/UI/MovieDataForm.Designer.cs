@@ -29,28 +29,26 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.movieNumberTextBox = new System.Windows.Forms.TextBox();
+            this.movieTitleTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.movieDescriptionTextBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.movieReleaseYearTextBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.genreIDComboBox = new System.Windows.Forms.ComboBox();
+            this.ratingComboBox = new System.Windows.Forms.ComboBox();
+            this.mediaTypeComboBox = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.retailCostTextBox = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.copiedOnHandTextBox = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.imageFileNameTextBox = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.trailerLinkTextBox = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.movieDataViewGrid = new System.Windows.Forms.DataGridView();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -82,21 +80,21 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Movie Number: ";
             // 
-            // textBox1
+            // movieNumberTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(103, 34);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(49, 20);
-            this.textBox1.TabIndex = 1;
+            this.movieNumberTextBox.Location = new System.Drawing.Point(103, 34);
+            this.movieNumberTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.movieNumberTextBox.Name = "movieNumberTextBox";
+            this.movieNumberTextBox.Size = new System.Drawing.Size(49, 20);
+            this.movieNumberTextBox.TabIndex = 1;
             // 
-            // textBox2
+            // movieTitleTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(103, 55);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(128, 20);
-            this.textBox2.TabIndex = 3;
+            this.movieTitleTextBox.Location = new System.Drawing.Point(103, 55);
+            this.movieTitleTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.movieTitleTextBox.Name = "movieTitleTextBox";
+            this.movieTitleTextBox.Size = new System.Drawing.Size(128, 20);
+            this.movieTitleTextBox.TabIndex = 3;
             // 
             // label2
             // 
@@ -108,14 +106,14 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Title:";
             // 
-            // textBox3
+            // movieDescriptionTextBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(103, 76);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(383, 93);
-            this.textBox3.TabIndex = 5;
+            this.movieDescriptionTextBox.Location = new System.Drawing.Point(103, 76);
+            this.movieDescriptionTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.movieDescriptionTextBox.Multiline = true;
+            this.movieDescriptionTextBox.Name = "movieDescriptionTextBox";
+            this.movieDescriptionTextBox.Size = new System.Drawing.Size(383, 93);
+            this.movieDescriptionTextBox.TabIndex = 5;
             // 
             // label3
             // 
@@ -127,13 +125,13 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Description:";
             // 
-            // textBox4
+            // movieReleaseYearTextBox
             // 
-            this.textBox4.Location = new System.Drawing.Point(103, 172);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(128, 20);
-            this.textBox4.TabIndex = 7;
+            this.movieReleaseYearTextBox.Location = new System.Drawing.Point(103, 172);
+            this.movieReleaseYearTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.movieReleaseYearTextBox.Name = "movieReleaseYearTextBox";
+            this.movieReleaseYearTextBox.Size = new System.Drawing.Size(128, 20);
+            this.movieReleaseYearTextBox.TabIndex = 7;
             // 
             // label4
             // 
@@ -165,32 +163,32 @@
             this.label6.TabIndex = 10;
             this.label6.Text = "Rating:";
             // 
-            // comboBox1
+            // genreIDComboBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(103, 192);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(139, 21);
-            this.comboBox1.TabIndex = 11;
+            this.genreIDComboBox.FormattingEnabled = true;
+            this.genreIDComboBox.Location = new System.Drawing.Point(103, 192);
+            this.genreIDComboBox.Margin = new System.Windows.Forms.Padding(2);
+            this.genreIDComboBox.Name = "genreIDComboBox";
+            this.genreIDComboBox.Size = new System.Drawing.Size(139, 21);
+            this.genreIDComboBox.TabIndex = 11;
             // 
-            // comboBox2
+            // ratingComboBox
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(297, 192);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(139, 21);
-            this.comboBox2.TabIndex = 12;
+            this.ratingComboBox.FormattingEnabled = true;
+            this.ratingComboBox.Location = new System.Drawing.Point(297, 192);
+            this.ratingComboBox.Margin = new System.Windows.Forms.Padding(2);
+            this.ratingComboBox.Name = "ratingComboBox";
+            this.ratingComboBox.Size = new System.Drawing.Size(139, 21);
+            this.ratingComboBox.TabIndex = 12;
             // 
-            // comboBox3
+            // mediaTypeComboBox
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(488, 192);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(139, 21);
-            this.comboBox3.TabIndex = 14;
+            this.mediaTypeComboBox.FormattingEnabled = true;
+            this.mediaTypeComboBox.Location = new System.Drawing.Point(488, 192);
+            this.mediaTypeComboBox.Margin = new System.Windows.Forms.Padding(2);
+            this.mediaTypeComboBox.Name = "mediaTypeComboBox";
+            this.mediaTypeComboBox.Size = new System.Drawing.Size(139, 21);
+            this.mediaTypeComboBox.TabIndex = 14;
             // 
             // label7
             // 
@@ -198,17 +196,17 @@
             this.label7.Location = new System.Drawing.Point(444, 196);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(41, 13);
+            this.label7.Size = new System.Drawing.Size(39, 13);
             this.label7.TabIndex = 13;
-            this.label7.Text = "Rating:";
+            this.label7.Text = "Media:";
             // 
-            // textBox5
+            // retailCostTextBox
             // 
-            this.textBox5.Location = new System.Drawing.Point(103, 214);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(128, 20);
-            this.textBox5.TabIndex = 16;
+            this.retailCostTextBox.Location = new System.Drawing.Point(103, 214);
+            this.retailCostTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.retailCostTextBox.Name = "retailCostTextBox";
+            this.retailCostTextBox.Size = new System.Drawing.Size(128, 20);
+            this.retailCostTextBox.TabIndex = 16;
             // 
             // label8
             // 
@@ -220,49 +218,31 @@
             this.label8.TabIndex = 15;
             this.label8.Text = "Retail Cost:";
             // 
-            // textBox6
+            // copiedOnHandTextBox
             // 
-            this.textBox6.Location = new System.Drawing.Point(319, 214);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(128, 20);
-            this.textBox6.TabIndex = 18;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(239, 218);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(65, 13);
-            this.label9.TabIndex = 17;
-            this.label9.Text = "Rental Cost:";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(558, 214);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(69, 20);
-            this.textBox7.TabIndex = 20;
+            this.copiedOnHandTextBox.Location = new System.Drawing.Point(345, 214);
+            this.copiedOnHandTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.copiedOnHandTextBox.Name = "copiedOnHandTextBox";
+            this.copiedOnHandTextBox.Size = new System.Drawing.Size(69, 20);
+            this.copiedOnHandTextBox.TabIndex = 20;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(456, 216);
+            this.label10.Location = new System.Drawing.Point(241, 217);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(100, 13);
             this.label10.TabIndex = 19;
             this.label10.Text = "Copies in Inventory:";
             // 
-            // textBox8
+            // imageFileNameTextBox
             // 
-            this.textBox8.Location = new System.Drawing.Point(103, 235);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(128, 20);
-            this.textBox8.TabIndex = 22;
+            this.imageFileNameTextBox.Location = new System.Drawing.Point(103, 235);
+            this.imageFileNameTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.imageFileNameTextBox.Name = "imageFileNameTextBox";
+            this.imageFileNameTextBox.Size = new System.Drawing.Size(128, 20);
+            this.imageFileNameTextBox.TabIndex = 22;
             // 
             // label11
             // 
@@ -274,13 +254,13 @@
             this.label11.TabIndex = 21;
             this.label11.Text = "Image File Name:";
             // 
-            // textBox9
+            // trailerLinkTextBox
             // 
-            this.textBox9.Location = new System.Drawing.Point(304, 235);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(323, 20);
-            this.textBox9.TabIndex = 24;
+            this.trailerLinkTextBox.Location = new System.Drawing.Point(304, 235);
+            this.trailerLinkTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.trailerLinkTextBox.Name = "trailerLinkTextBox";
+            this.trailerLinkTextBox.Size = new System.Drawing.Size(323, 20);
+            this.trailerLinkTextBox.TabIndex = 24;
             // 
             // label12
             // 
@@ -296,7 +276,7 @@
             // 
             this.movieDataViewGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.movieDataViewGrid.Location = new System.Drawing.Point(13, 263);
-            this.movieDataViewGrid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.movieDataViewGrid.Margin = new System.Windows.Forms.Padding(2);
             this.movieDataViewGrid.Name = "movieDataViewGrid";
             this.movieDataViewGrid.RowTemplate.Height = 28;
             this.movieDataViewGrid.Size = new System.Drawing.Size(612, 171);
@@ -327,7 +307,7 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(92, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -355,18 +335,19 @@
             // 
             this.addButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addButton.Location = new System.Drawing.Point(63, 439);
-            this.addButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.addButton.Margin = new System.Windows.Forms.Padding(2);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(99, 41);
             this.addButton.TabIndex = 27;
             this.addButton.Text = "Add";
             this.addButton.UseVisualStyleBackColor = true;
+            this.addButton.Click += new System.EventHandler(this.addButton_Click);
             // 
             // updateButton
             // 
             this.updateButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.updateButton.Location = new System.Drawing.Point(166, 438);
-            this.updateButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.updateButton.Margin = new System.Windows.Forms.Padding(2);
             this.updateButton.Name = "updateButton";
             this.updateButton.Size = new System.Drawing.Size(99, 41);
             this.updateButton.TabIndex = 29;
@@ -377,7 +358,7 @@
             // 
             this.deleteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deleteButton.Location = new System.Drawing.Point(269, 438);
-            this.deleteButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.deleteButton.Margin = new System.Windows.Forms.Padding(2);
             this.deleteButton.Name = "deleteButton";
             this.deleteButton.Size = new System.Drawing.Size(99, 41);
             this.deleteButton.TabIndex = 30;
@@ -388,7 +369,7 @@
             // 
             this.clearButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.clearButton.Location = new System.Drawing.Point(371, 438);
-            this.clearButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.clearButton.Margin = new System.Windows.Forms.Padding(2);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(99, 41);
             this.clearButton.TabIndex = 31;
@@ -399,12 +380,13 @@
             // 
             this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exitButton.Location = new System.Drawing.Point(474, 438);
-            this.exitButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.exitButton.Margin = new System.Windows.Forms.Padding(2);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(99, 41);
             this.exitButton.TabIndex = 32;
             this.exitButton.Text = "Exit";
             this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // statusStrip1
             // 
@@ -446,33 +428,31 @@
             this.Controls.Add(this.updateButton);
             this.Controls.Add(this.addButton);
             this.Controls.Add(this.movieDataViewGrid);
-            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.trailerLinkTextBox);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.imageFileNameTextBox);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.copiedOnHandTextBox);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.retailCostTextBox);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.mediaTypeComboBox);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.ratingComboBox);
+            this.Controls.Add(this.genreIDComboBox);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.movieReleaseYearTextBox);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.movieDescriptionTextBox);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.movieTitleTextBox);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.movieNumberTextBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MovieData";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MovieData";
@@ -490,28 +470,26 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox movieNumberTextBox;
+        private System.Windows.Forms.TextBox movieTitleTextBox;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox movieDescriptionTextBox;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox movieReleaseYearTextBox;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox genreIDComboBox;
+        private System.Windows.Forms.ComboBox ratingComboBox;
+        private System.Windows.Forms.ComboBox mediaTypeComboBox;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox retailCostTextBox;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox copiedOnHandTextBox;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox imageFileNameTextBox;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox trailerLinkTextBox;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.DataGridView movieDataViewGrid;
         private System.Windows.Forms.MenuStrip menuStrip1;
