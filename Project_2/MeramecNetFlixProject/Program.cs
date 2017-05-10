@@ -20,7 +20,7 @@ namespace MeramecNetFlixProject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MovieData());
+            Application.Run(new MainMenu());
         }
     }
 }
