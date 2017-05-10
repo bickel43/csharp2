@@ -64,3 +64,16 @@ C:\Users\Keegan\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\M
 C:\Users\Keegan\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\MeramecNetFlixProject.UI.LogInForm.resources
 C:\Users\Keegan\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\MeramecNetFlixProject.MovieData.resources
 C:\Users\Keegan\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\MeramecNetFlixProject.csproj.GenerateResource.Cache
+C:\Users\bickelk\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\bin\Debug\MeramecNetFlixProject.exe.config
+C:\Users\bickelk\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\MeramecNetFlixProject.exe
+C:\Users\bickelk\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\MeramecNetFlixProject.pdb
+C:\Users\bickelk\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\bin\Debug\MeramecNetFlixProject.exe
+C:\Users\bickelk\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\bin\Debug\MeramecNetFlixProject.pdb
+C:\Users\bickelk\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\MeramecNetFlixProject.csprojResolveAssemblyReference.cache
+C:\Users\bickelk\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\MeramecNetFlixProject.Properties.Resources.resources
+C:\Users\bickelk\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\MeramecNetFlixProject.Genre.resources
+C:\Users\bickelk\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\MeramecNetFlixProject.MainMenu.resources
+C:\Users\bickelk\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\MeramecNetFlixProject.MemberInfo.resources
+C:\Users\bickelk\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\MeramecNetFlixProject.UI.LogInForm.resources
+C:\Users\bickelk\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\MeramecNetFlixProject.MovieData.resources
+C:\Users\bickelk\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\MeramecNetFlixProject.csproj.GenerateResource.Cache

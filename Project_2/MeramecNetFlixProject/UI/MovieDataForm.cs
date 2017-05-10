@@ -40,15 +40,15 @@ namespace MeramecNetFlixProject
             {
                 MovieClass myMovieObj = new MovieClass();
 
-                myMovieObj.MovieNumber = Convert.ToInt16(movieNumberTextBox);
+                myMovieObj.MovieNumber = Convert.ToInt32(movieNumberTextBox.Text);
                 myMovieObj.MovieTitle = movieTitleTextBox.Text;
                 myMovieObj.Description = movieDescriptionTextBox.Text;
-                myMovieObj.MovieYear = Convert.ToInt32(movieReleaseYearTextBox);
-                myMovieObj.GenreID = Convert.ToInt32(genreIDComboBox);
+                myMovieObj.MovieYear = Convert.ToInt32(movieReleaseYearTextBox.Text);
+                myMovieObj.GenreID = Convert.ToInt32(genreIDComboBox.Text);
                 myMovieObj.MovieRating = ratingComboBox.Text;
                 myMovieObj.MediaType = mediaTypeComboBox.Text;
-                myMovieObj.MovieRetailCost = retailCostTextBox.ToString();
-                myMovieObj.CopiesOnHand = Convert.ToInt32(copiedOnHandTextBox);
+                myMovieObj.MovieRetailCost = retailCostTextBox.Text;
+                myMovieObj.CopiesOnHand = Convert.ToInt32(copiedOnHandTextBox.Text);
                 myMovieObj.MovieImage = imageFileNameTextBox.Text;
                 myMovieObj.MovieTrailer = trailerLinkTextBox.Text;
 
@@ -62,13 +62,14 @@ namespace MeramecNetFlixProject
                 }
                 else
                 {
-                    MessageBox.Show("Record not added");
+                    rowsAffectedLabel.Text = "No Changes Made";
                 }
                 cleanupUI();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                MessageBox.Show("Error when adding user. \nMake sure all fields are populated.", "User Addition Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message,"Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                //MessageBox.Show("Error when adding user. \nMake sure all fields are populated.", "User Addition Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         private void cleanupUI()

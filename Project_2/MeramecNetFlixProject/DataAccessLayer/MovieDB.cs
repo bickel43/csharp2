@@ -117,7 +117,7 @@ namespace MeramecNetFlixProject.DataAccessLayer
 
                     using (objCommand = new SqlCommand(sqlString, myConnection))
                     {
-                        objCommand.Parameters.AddWithValue("@number", myMovie.MovieNumber);
+                        objCommand.Parameters.AddWithValue("@movie_number", myMovie.MovieNumber);
                         objCommand.Parameters.AddWithValue("@movie_title", myMovie.MovieTitle);
                         objCommand.Parameters.AddWithValue("@Description", myMovie.Description);
                         objCommand.Parameters.AddWithValue("@movie_year_made", myMovie.MovieYear);
