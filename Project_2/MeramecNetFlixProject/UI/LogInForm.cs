@@ -14,8 +14,15 @@ using MeramecNetFlixProject.DataAccessLayer;
 
 namespace MeramecNetFlixProject.UI
 {
+    //Create delegate object
+    public delegate void EnableMenu();
+
+
     public partial class LogInForm : Form
     {
+        //Event variables
+        public event EnableMenu memberVerified;
+
         MemberClass objMember = new MemberClass();
 
         public LogInForm()
@@ -77,6 +84,7 @@ namespace MeramecNetFlixProject.UI
             {
                 Hide();
                 MainMenu sign = new MainMenu();
+                memberVerified();
                 sign.Show();
             }
             else

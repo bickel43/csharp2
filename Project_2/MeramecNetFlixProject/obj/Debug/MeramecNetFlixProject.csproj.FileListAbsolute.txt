@@ -77,3 +77,16 @@ C:\Users\bickelk\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\
 C:\Users\bickelk\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\MeramecNetFlixProject.UI.LogInForm.resources
 C:\Users\bickelk\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\MeramecNetFlixProject.MovieData.resources
 C:\Users\bickelk\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\MeramecNetFlixProject.csproj.GenerateResource.Cache
+C:\Users\asinanovic\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\bin\Debug\MeramecNetFlixProject.exe.config
+C:\Users\asinanovic\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\MeramecNetFlixProject.exe
+C:\Users\asinanovic\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\MeramecNetFlixProject.pdb
+C:\Users\asinanovic\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\bin\Debug\MeramecNetFlixProject.exe
+C:\Users\asinanovic\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\bin\Debug\MeramecNetFlixProject.pdb
+C:\Users\asinanovic\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\MeramecNetFlixProject.csprojResolveAssemblyReference.cache
+C:\Users\asinanovic\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\MeramecNetFlixProject.Properties.Resources.resources
+C:\Users\asinanovic\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\MeramecNetFlixProject.Genre.resources
+C:\Users\asinanovic\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\MeramecNetFlixProject.MainMenu.resources
+C:\Users\asinanovic\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\MeramecNetFlixProject.MemberInfo.resources
+C:\Users\asinanovic\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\MeramecNetFlixProject.UI.LogInForm.resources
+C:\Users\asinanovic\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\MeramecNetFlixProject.MovieData.resources
+C:\Users\asinanovic\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\MeramecNetFlixProject.csproj.GenerateResource.Cache

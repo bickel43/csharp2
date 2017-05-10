@@ -27,6 +27,9 @@ namespace MeramecNetFlixProject
         private void signInButton_Click(object sender, EventArgs e)
         {
             LogInForm openSignIn = new LogInForm();
+
+            openSignIn.memberVerified += new EnableMenu(EnableMainMenuButtons);
+
             openSignIn.ShowDialog();   
         }
 
@@ -48,16 +51,16 @@ namespace MeramecNetFlixProject
 
         public void DisableMainMenuButtons()
         {
-            browseButton.Visible = false;
-            manageAccountButton.Visible = false;
-            helpButton.Visible = false;
+            browseButton.Enabled = false;
+            manageAccountButton.Enabled = false;
+            helpButton.Enabled = false;
         }
 
         public void EnableMainMenuButtons()
         {
-            browseButton.Visible = true;
-            manageAccountButton.Visible = true;
-            helpButton.Visible = true;
+            browseButton.Enabled = true;
+            manageAccountButton.Enabled = true;
+            helpButton.Enabled = true;
         }
     }
 }
