@@ -69,7 +69,6 @@ C:\Users\bickelk\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\
 C:\Users\bickelk\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\MeramecNetFlixProject.pdb
 C:\Users\bickelk\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\bin\Debug\MeramecNetFlixProject.exe
 C:\Users\bickelk\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\bin\Debug\MeramecNetFlixProject.pdb
-C:\Users\bickelk\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\MeramecNetFlixProject.csprojResolveAssemblyReference.cache
 C:\Users\bickelk\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\MeramecNetFlixProject.Properties.Resources.resources
 C:\Users\bickelk\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\MeramecNetFlixProject.Genre.resources
 C:\Users\bickelk\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\MeramecNetFlixProject.MainMenu.resources
@@ -101,3 +100,4 @@ C:\Users\Keegan\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\R
 C:\Users\asinanovic\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\MeramecNetFlixProject.UI.MovieReport.resources
 C:\Users\bickelk\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\MeramecNetFlixProject.UI.MovieReport.resources
 C:\Users\bickelk\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\MeramecNetFlixProject.UI.UserReport.resources
+C:\Users\bickelk\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\MeramecNetFlixProject.csprojResolveAssemblyReference.cache

@@ -38,6 +38,7 @@ namespace MeramecNetFlixProject.UI
         private void signUpLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             MemberInfo signUpForm = new MemberInfo();
+            
             signUpForm.ShowDialog();
         }
 

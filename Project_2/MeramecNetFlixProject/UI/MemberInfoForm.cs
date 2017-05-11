@@ -27,8 +27,10 @@ namespace MeramecNetFlixProject
             memberDataViewGrid.DataSource = MemberDB.GetAllMembers();
 
             //hide columns - use this to hide everything we don't want showing (password and other irrevelant info)
-           // memberDataViewGrid.Columns[0].Visible = false;  
- 
+            memberDataViewGrid.Columns[11].Visible = false;  //password field
+
+            //automagically enumerate the member number
+            memberNumberTextBox.Text = Convert.ToString(memberDataViewGrid.RowCount + 1);
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -151,6 +153,7 @@ namespace MeramecNetFlixProject
 
             //Populate the genre data grid on form load
             memberDataViewGrid.DataSource = MemberDB.GetAllMembers();
+            memberNumberTextBox.Text = Convert.ToString(memberDataViewGrid.RowCount + 1);
         }
 
         private void changePhotoButton_Click(object sender, EventArgs e)
@@ -319,6 +322,18 @@ namespace MeramecNetFlixProject
         private void helpToolStripMenuItem1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void overrideMemberNumber_CheckedChanged(object sender, EventArgs e)
+        {
+            if (memberNumberTextBox.ReadOnly == true)
+            {
+                memberNumberTextBox.ReadOnly = false;
+            }
+            else
+            {
+                memberNumberTextBox.ReadOnly = true;
+            }
         }
     }
 }

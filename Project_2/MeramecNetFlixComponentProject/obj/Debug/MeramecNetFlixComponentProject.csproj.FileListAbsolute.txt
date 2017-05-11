@@ -8,3 +8,8 @@ C:\Users\Keegan\Source\Repos\Csharp2_Project\Project_2\Project_2\MeramecNetFlixC
 C:\Users\Keegan\Source\Repos\Csharp2_Project\Project_2\Project_2\MeramecNetFlixComponentProject\obj\Debug\MeramecNetFlixComponentProject.csprojResolveAssemblyReference.cache
 C:\Users\Keegan\Source\Repos\Csharp2_Project\Project_2\Project_2\MeramecNetFlixComponentProject\obj\Debug\MeramecNetFlixComponentLibrary.dll
 C:\Users\Keegan\Source\Repos\Csharp2_Project\Project_2\Project_2\MeramecNetFlixComponentProject\obj\Debug\MeramecNetFlixComponentLibrary.pdb
+C:\Users\bickelk\Source\Repos\csharp2\Project_2\MeramecNetFlixComponentProject\bin\Debug\MeramecNetFlixComponentLibrary.dll
+C:\Users\bickelk\Source\Repos\csharp2\Project_2\MeramecNetFlixComponentProject\bin\Debug\MeramecNetFlixComponentLibrary.pdb
+C:\Users\bickelk\Source\Repos\csharp2\Project_2\MeramecNetFlixComponentProject\obj\Debug\MeramecNetFlixComponentProject.csprojResolveAssemblyReference.cache
+C:\Users\bickelk\Source\Repos\csharp2\Project_2\MeramecNetFlixComponentProject\obj\Debug\MeramecNetFlixComponentLibrary.dll
+C:\Users\bickelk\Source\Repos\csharp2\Project_2\MeramecNetFlixComponentProject\obj\Debug\MeramecNetFlixComponentLibrary.pdb
