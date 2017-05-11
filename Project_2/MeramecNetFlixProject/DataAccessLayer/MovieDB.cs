@@ -152,126 +152,130 @@ namespace MeramecNetFlixProject.DataAccessLayer
             return true; //temporary return until your code is fully flushed out. Remove or comment out this line
         }
 
-        //public static bool UpdateMovie(MovieClass myMovie)
-        //{
-        //    //Pre-step: Replace the general object parameter with the appropriate business class object that you are using to insert data in the underline database table 
-        //    string SQLStatement = String.Empty;
+        internal static bool UpdateMovie(MovieClass myMovie)
+        {
+            //Pre-step: Replace the general object parameter with the appropriate business class object that you are using to insert data in the underline database table 
+            string SQLStatement = String.Empty;
 
-        //    //Step #1: Add code to call the appropriate method from the inherited AccessDataSQLServer class
-        //    //To return a database connection object
-        //    SqlConnection myConnection = AccessDataSQLServer.GetConnection();
+            //Step #1: Add code to call the appropriate method from the inherited AccessDataSQLServer class
+            //To return a database connection object
+            SqlConnection myConnection = AccessDataSQLServer.GetConnection();
 
-        //    //Step #2: Code logic to create appropriate SQL Server objects calls
-        //    //         Cod Logic to retrieve data from database
-        //    //         Add Try..Catch appropriate block and throw exception back to calling program
+            //Step #2: Code logic to create appropriate SQL Server objects calls
+            //         Cod Logic to retrieve data from database
+            //         Add Try..Catch appropriate block and throw exception back to calling program
 
-        //    SqlCommand objCommand = null;
-        //    int rowsAffected = 0;
+            SqlCommand objCommand = null;
+            int rowsAffected = 0;
 
-        //    string sqlString;
+            string sqlString;
 
-        //    try
-        //    {
-        //        using (myConnection)
-        //        {
-        //            myConnection.Open();
-        //            sqlString = "UPDATE Member set firstname=@firstname,lastname=@lastname,address=@address,city=@city,state=@state,zipcode=@zipcode,phone=@phone,login_name=@login_name,password=@password,email=@email where number=@number";
-        //            //add joindate=@joindate, to the SQL string
-        //            //sqlString = "UPDATE Member set firstname=@firstname where number=@number";
+            try
+            {
+                using (myConnection)
+                {
+                    myConnection.Open();
+                    sqlString = "UPDATE Movie set movie_number=@movie_number,movie_title=@movie_title,Description=@Description,movie_year_made=@movie_year_made,genre_id=@genre_id,movie_rating=@movie_rating,media_type=@media_type,movie_retail_cost=@movie_retail_cost,copies_on_hand=@copies_on_hand,image=@image,trailer=@trailer";
+                    //add joindate=@joindate, to the SQL string
+                    //sqlString = "UPDATE Member set firstname=@firstname where number=@number";
 
-        //            using (objCommand = new SqlCommand(sqlString, myConnection))
-        //            {
-        //                objCommand.Parameters.AddWithValue("@number", myMovie.MemberNumber);
-        //                //objCommand.Parameters.AddWithValue("@joindate", myMovie.JoinDate.ToString());
-        //                objCommand.Parameters.AddWithValue("@firstname", myMovie.Firstname);
-        //                objCommand.Parameters.AddWithValue("@lastname", myMovie.Lastname.ToString());
-        //                objCommand.Parameters.AddWithValue("@address", myMovie.Address.ToString());
-        //                objCommand.Parameters.AddWithValue("@city", myMovie.City.ToString());
-        //                objCommand.Parameters.AddWithValue("@state", myMovie.State.ToString());
-        //                objCommand.Parameters.AddWithValue("@zipcode", myMovie.Zipcode.ToString());
-        //                objCommand.Parameters.AddWithValue("@phone", myMovie.Phone.ToString());
-        //                ////objCommand.Parameters.AddWithValue("@member_status", myMovie.MemberStatus);
-        //                objCommand.Parameters.AddWithValue("@login_name", myMovie.LoginName.ToString());
-        //                objCommand.Parameters.AddWithValue("@password", myMovie.Password.ToString());
-        //                objCommand.Parameters.AddWithValue("@email", myMovie.Email.ToString());
-        //                ////objCommand.Parameters.AddWithValue("@contact_method", myMovie.ContactMethod);
-        //                //objCommand.Parameters.AddWithValue("@subscription_id", myMovie.SubscriptionID.ToString());
-        //                objCommand.Parameters.AddWithValue("@photo", "photo");
+                    using (objCommand = new SqlCommand(sqlString, myConnection))
+                    {
+                        objCommand.Parameters.AddWithValue("@movie_number", myMovie.MovieNumber);
+                        objCommand.Parameters.AddWithValue("@movie_title", myMovie.MovieTitle);
+                        objCommand.Parameters.AddWithValue("@Description", myMovie.Description);
+                        objCommand.Parameters.AddWithValue("@movie_year_made", myMovie.MovieYear);
+                        objCommand.Parameters.AddWithValue("@genre_id", myMovie.GenreID);
+                        objCommand.Parameters.AddWithValue("@movie_rating", myMovie.MovieRating);
+                        objCommand.Parameters.AddWithValue("@media_type", myMovie.MediaType);
+                        objCommand.Parameters.AddWithValue("@movie_retail_cost", myMovie.MovieRetailCost);
+                        objCommand.Parameters.AddWithValue("@copies_on_hand", myMovie.CopiesOnHand);
+                        objCommand.Parameters.AddWithValue("@image", myMovie.MovieImage);
+                        objCommand.Parameters.AddWithValue("@trailer", myMovie.MovieTrailer);
 
-        //                rowsAffected = objCommand.ExecuteNonQuery();
-        //            }
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        throw ex;
-        //    }
+                        rowsAffected = objCommand.ExecuteNonQuery();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
 
-        //    finally
-        //    {
-        //        if (myMovie != null)
-        //        {
-        //            myConnection.Close();
-        //        }
-        //    }
-        //    return true;
-        //}
+            finally
+            {
+                if (myMovie != null)
+                {
+                    myConnection.Close();
+                }
+            }
+            return true;
+        }
 
-        //public static bool DeleteMovie(MovieClass myMovie)
-        //{
-        //    //Pre-step: Replace the general object parameter with the appropriate business class object that you are using to insert data in the underline database table 
-        //    string SQLStatement = String.Empty;
+        internal static bool DeleteMovie(MovieClass myMovie)
+        {
+            //Pre-step: Replace the general object parameter with the appropriate business class object that you are using to insert data in the underline database table 
+            string SQLStatement = String.Empty;
 
-        //    //Step #1: Add code to call the appropriate method from the inherited AccessDataSQLServer class
-        //    //To return a database connection object
-        //    SqlConnection myConnection = AccessDataSQLServer.GetConnection();
+            //Step #1: Add code to call the appropriate method from the inherited AccessDataSQLServer class
+            //To return a database connection object
+            SqlConnection myConnection = AccessDataSQLServer.GetConnection();
 
-        //    //Step #2: Code logic to create appropriate SQL Server objects calls
-        //    //         Cod Logic to retrieve data from database
-        //    //         Add Try..Catch appropriate block and throw exception back to calling program
+            //Step #2: Code logic to create appropriate SQL Server objects calls
+            //         Cod Logic to retrieve data from database
+            //         Add Try..Catch appropriate block and throw exception back to calling program
 
-        //    SqlCommand objCommand = null;
-        //    int rowsAffected = 0;
+            SqlCommand objCommand = null;
+            int rowsAffected = 0;
 
-        //    string sqlString;
+            string sqlString;
 
-        //    try
-        //    {
-        //        using (myConnection)
-        //        {
-        //            myConnection.Open();
-        //            sqlString = "DELETE Member where number=@number";
+            try
+            {
+                using (myConnection)
+                {
+                    myConnection.Open();
+                    sqlString = "DELETE Movie where movie_number=@movie_number";
 
-        //            //Added this for some testing...
-        //            //sqlString = "INSERT into Member values (@firstname,@lastname)";
+                    //Added this for some testing...
+                    //sqlString = "INSERT into Member values (@firstname,@lastname)";
 
 
-        //            using (objCommand = new SqlCommand(sqlString, myConnection))
-        //            {
-        //                objCommand.Parameters.AddWithValue("@number", myMovie.MemberNumber);
+                    using (objCommand = new SqlCommand(sqlString, myConnection))
+                    {
+                        objCommand.Parameters.AddWithValue("@movie_number", myMovie.MovieNumber);
+                        objCommand.Parameters.AddWithValue("@movie_title", myMovie.MovieTitle);
+                        objCommand.Parameters.AddWithValue("@Description", myMovie.Description);
+                        objCommand.Parameters.AddWithValue("@movie_year_made", myMovie.MovieYear);
+                        objCommand.Parameters.AddWithValue("@genre_id", myMovie.GenreID);
+                        objCommand.Parameters.AddWithValue("@movie_rating", myMovie.MovieRating);
+                        objCommand.Parameters.AddWithValue("@media_type", myMovie.MediaType);
+                        objCommand.Parameters.AddWithValue("@movie_retail_cost", myMovie.MovieRetailCost);
+                        objCommand.Parameters.AddWithValue("@copies_on_hand", myMovie.CopiesOnHand);
+                        objCommand.Parameters.AddWithValue("@image", myMovie.MovieImage);
+                        objCommand.Parameters.AddWithValue("@trailer", myMovie.MovieTrailer);
 
-        //                rowsAffected = objCommand.ExecuteNonQuery();
-        //            }
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        throw ex;
-        //    }
+                        rowsAffected = objCommand.ExecuteNonQuery();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
 
-        //    finally
-        //    {
-        //        if (myConnection != null)
-        //        {
-        //            myConnection.Close();
-        //        }
-        //    }
+            finally
+            {
+                if (myConnection != null)
+                {
+                    myConnection.Close();
+                }
+            }
 
-        //    //Step #3: return false if record was not added successfully
-        //    //         return true if record was added successfully  
+            //Step #3: return false if record was not added successfully
+            //         return true if record was added successfully  
 
-        //    return true; //temporary return until your code is fully flushed out. Remove or comment out this line
-        //}
-
+            return true; //temporary return until your code is fully flushed out. Remove or comment out this line
+        }
     }
 }

@@ -94,3 +94,7 @@ C:\Users\asinanovic\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\bin\Deb
 C:\Users\asinanovic\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\MeramecNetFlixProject.UI.UserReport.resources
 C:\Users\asinanovic\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\RdlCompile.cache
 C:\Users\asinanovic\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\RdlCompile.compiled
+C:\Users\Keegan\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Keegan\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\MeramecNetFlixProject.UI.UserReport.resources
+C:\Users\Keegan\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\RdlCompile.cache
+C:\Users\Keegan\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\RdlCompile.compiled
