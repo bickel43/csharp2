@@ -52,11 +52,13 @@
     <Compile Include="BusinessObjects\MemberClass.cs" />
     <Compile Include="BusinessObjects\GenreClass.cs" />
     <Compile Include="BusinessObjects\MovieClass.cs" />
+    <Compile Include="BusinessObjects\VendorClass.cs" />
     <Compile Include="DataAccessLayer\AccessDataSQLServer.cs" />
     <Compile Include="BusinessObjects\MyCustomObject.cs" />
     <Compile Include="DataAccessLayer\MovieDB.cs" />
     <Compile Include="DataAccessLayer\MemberDB.cs" />
     <Compile Include="DataAccessLayer\GenreDB.cs" />
+    <Compile Include="DataAccessLayer\VendorDB.cs" />
     <Compile Include="teamgDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -161,6 +163,9 @@
     <EmbeddedResource Include="UI\Report2.rdlc" />
     <EmbeddedResource Include="UI\UserReport.resx">
       <DependentUpon>UserReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VendorForm.resx">
+      <DependentUpon>VendorForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

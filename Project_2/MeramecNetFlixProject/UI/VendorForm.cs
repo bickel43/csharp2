@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MeramecNetFlixProject
+namespace MeramecNetFlixProject.UI
 {
-    public partial class Vendor : Form
+    public partial class VendorForm: Form
     {
-        public Vendor()
+        public VendorForm()
         {
             InitializeComponent();
         }
