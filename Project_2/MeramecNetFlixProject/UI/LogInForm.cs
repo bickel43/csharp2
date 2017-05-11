@@ -16,7 +16,7 @@ namespace MeramecNetFlixProject.UI
 {
     //Create delegate object
     public delegate void EnableMenu();
-
+    
 
     public partial class LogInForm : Form
     {
@@ -37,8 +37,8 @@ namespace MeramecNetFlixProject.UI
 
         private void signUpLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            MemberInfo signUpForm = new MemberInfo();
             
+            MemberInfo signUpForm = new MemberInfo();
             signUpForm.ShowDialog();
         }
 
@@ -69,8 +69,6 @@ namespace MeramecNetFlixProject.UI
                         {
                             loginAccepted = true;
 
-                            //MainMenu enableButtons = new MainMenu();
-                            //enableButtons.EnableMainMenuButtons();
                         }
                     }
 

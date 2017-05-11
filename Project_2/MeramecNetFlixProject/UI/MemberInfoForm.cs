@@ -318,6 +318,7 @@ namespace MeramecNetFlixProject
             report.ShowDialog();
             report = null;
         }
+   
 
         private void helpToolStripMenuItem1_Click(object sender, EventArgs e)
         {

@@ -33,7 +33,7 @@
             this.browseButton = new System.Windows.Forms.Button();
             this.exitMovieButton = new System.Windows.Forms.Button();
             this.signInButton = new System.Windows.Forms.Button();
-            this.helpButton = new System.Windows.Forms.Button();
+            this.rentButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // manageAccountButton
@@ -42,10 +42,10 @@
             this.manageAccountButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.manageAccountButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.manageAccountButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.manageAccountButton.Location = new System.Drawing.Point(515, 438);
-            this.manageAccountButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.manageAccountButton.Location = new System.Drawing.Point(458, 350);
+            this.manageAccountButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.manageAccountButton.Name = "manageAccountButton";
-            this.manageAccountButton.Size = new System.Drawing.Size(241, 51);
+            this.manageAccountButton.Size = new System.Drawing.Size(214, 41);
             this.manageAccountButton.TabIndex = 0;
             this.manageAccountButton.Text = "Manage Account";
             this.manageAccountButton.UseVisualStyleBackColor = false;
@@ -57,10 +57,10 @@
             this.browseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.browseButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.browseButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.browseButton.Location = new System.Drawing.Point(266, 438);
-            this.browseButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.browseButton.Location = new System.Drawing.Point(236, 350);
+            this.browseButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.browseButton.Name = "browseButton";
-            this.browseButton.Size = new System.Drawing.Size(241, 51);
+            this.browseButton.Size = new System.Drawing.Size(214, 41);
             this.browseButton.TabIndex = 1;
             this.browseButton.Text = "Browse Inventory";
             this.browseButton.UseVisualStyleBackColor = false;
@@ -72,10 +72,10 @@
             this.exitMovieButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exitMovieButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitMovieButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.exitMovieButton.Location = new System.Drawing.Point(145, 499);
-            this.exitMovieButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.exitMovieButton.Location = new System.Drawing.Point(129, 399);
+            this.exitMovieButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.exitMovieButton.Name = "exitMovieButton";
-            this.exitMovieButton.Size = new System.Drawing.Size(241, 51);
+            this.exitMovieButton.Size = new System.Drawing.Size(214, 41);
             this.exitMovieButton.TabIndex = 2;
             this.exitMovieButton.Text = "Exit";
             this.exitMovieButton.UseVisualStyleBackColor = false;
@@ -87,44 +87,45 @@
             this.signInButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.signInButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signInButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.signInButton.Location = new System.Drawing.Point(16, 438);
-            this.signInButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.signInButton.Location = new System.Drawing.Point(14, 350);
+            this.signInButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.signInButton.Name = "signInButton";
-            this.signInButton.Size = new System.Drawing.Size(241, 51);
+            this.signInButton.Size = new System.Drawing.Size(214, 41);
             this.signInButton.TabIndex = 4;
             this.signInButton.Text = "Sign In";
             this.signInButton.UseVisualStyleBackColor = false;
             this.signInButton.Click += new System.EventHandler(this.signInButton_Click);
             // 
-            // helpButton
+            // rentButton
             // 
-            this.helpButton.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.helpButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.helpButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.helpButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.helpButton.Location = new System.Drawing.Point(395, 499);
-            this.helpButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.helpButton.Name = "helpButton";
-            this.helpButton.Size = new System.Drawing.Size(241, 51);
-            this.helpButton.TabIndex = 5;
-            this.helpButton.Text = "Help";
-            this.helpButton.UseVisualStyleBackColor = false;
+            this.rentButton.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.rentButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rentButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rentButton.Location = new System.Drawing.Point(351, 399);
+            this.rentButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rentButton.Name = "rentButton";
+            this.rentButton.Size = new System.Drawing.Size(214, 41);
+            this.rentButton.TabIndex = 5;
+            this.rentButton.Text = "Rent ";
+            this.rentButton.UseVisualStyleBackColor = false;
+            this.rentButton.Click += new System.EventHandler(this.rentButton_Click);
             // 
             // MainMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1313, 662);
-            this.Controls.Add(this.helpButton);
+            this.ClientSize = new System.Drawing.Size(1167, 530);
+            this.Controls.Add(this.rentButton);
             this.Controls.Add(this.signInButton);
             this.Controls.Add(this.exitMovieButton);
             this.Controls.Add(this.browseButton);
             this.Controls.Add(this.manageAccountButton);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainMenu";
@@ -139,6 +140,6 @@
         private System.Windows.Forms.Button browseButton;
         private System.Windows.Forms.Button exitMovieButton;
         private System.Windows.Forms.Button signInButton;
-        private System.Windows.Forms.Button helpButton;
+        private System.Windows.Forms.Button rentButton;
     }
 }

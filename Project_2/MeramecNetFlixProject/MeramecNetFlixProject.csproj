@@ -62,6 +62,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>teamgDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="UI\Comedy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Comedy.Designer.cs">
+      <DependentUpon>Comedy.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\Genre.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +106,12 @@
     <Compile Include="UI\MovieReport.Designer.cs">
       <DependentUpon>MovieReport.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\Rental.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Rental.Designer.cs">
+      <DependentUpon>Rental.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\UserReport.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +133,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UI\Comedy.resx">
+      <DependentUpon>Comedy.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\Genre.resx">
       <DependentUpon>Genre.cs</DependentUpon>
     </EmbeddedResource>
@@ -138,6 +153,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\MovieReport.resx">
       <DependentUpon>MovieReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Rental.resx">
+      <DependentUpon>Rental.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Report1.rdlc" />
     <EmbeddedResource Include="UI\Report2.rdlc" />
@@ -174,7 +192,25 @@
     <Content Include="ProjectFileReadMe.txt" />
     <Content Include="UI\ReadMe.txt" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <COMReference Include="AxShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="ShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

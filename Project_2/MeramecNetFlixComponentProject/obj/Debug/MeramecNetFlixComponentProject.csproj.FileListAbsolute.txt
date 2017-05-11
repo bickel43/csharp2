@@ -13,3 +13,8 @@ C:\Users\bickelk\Source\Repos\csharp2\Project_2\MeramecNetFlixComponentProject\b
 C:\Users\bickelk\Source\Repos\csharp2\Project_2\MeramecNetFlixComponentProject\obj\Debug\MeramecNetFlixComponentProject.csprojResolveAssemblyReference.cache
 C:\Users\bickelk\Source\Repos\csharp2\Project_2\MeramecNetFlixComponentProject\obj\Debug\MeramecNetFlixComponentLibrary.dll
 C:\Users\bickelk\Source\Repos\csharp2\Project_2\MeramecNetFlixComponentProject\obj\Debug\MeramecNetFlixComponentLibrary.pdb
+C:\Users\asinanovic\Source\Repos\csharp2\Project_2\MeramecNetFlixComponentProject\bin\Debug\MeramecNetFlixComponentLibrary.dll
+C:\Users\asinanovic\Source\Repos\csharp2\Project_2\MeramecNetFlixComponentProject\bin\Debug\MeramecNetFlixComponentLibrary.pdb
+C:\Users\asinanovic\Source\Repos\csharp2\Project_2\MeramecNetFlixComponentProject\obj\Debug\MeramecNetFlixComponentProject.csprojResolveAssemblyReference.cache
+C:\Users\asinanovic\Source\Repos\csharp2\Project_2\MeramecNetFlixComponentProject\obj\Debug\MeramecNetFlixComponentLibrary.dll
+C:\Users\asinanovic\Source\Repos\csharp2\Project_2\MeramecNetFlixComponentProject\obj\Debug\MeramecNetFlixComponentLibrary.pdb

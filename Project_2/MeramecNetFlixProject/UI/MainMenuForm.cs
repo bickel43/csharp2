@@ -53,15 +53,21 @@ namespace MeramecNetFlixProject
         {
             browseButton.Enabled = false;
             manageAccountButton.Enabled = false;
-            helpButton.Enabled = false;
+            rentButton.Enabled = false;
         }
 
         public void EnableMainMenuButtons()
         {
             browseButton.Enabled = true;
             manageAccountButton.Enabled = true;
-            helpButton.Enabled = true;
+            rentButton.Enabled = true;
             signInButton.Enabled = false;
+        }
+
+        private void rentButton_Click(object sender, EventArgs e)
+        {
+            Genre rent = new Genre();
+            rent.ShowDialog();
         }
     }
 }
