@@ -61,6 +61,7 @@ namespace MeramecNetFlixProject
             browseButton.Enabled = true;
             manageAccountButton.Enabled = true;
             helpButton.Enabled = true;
+            signInButton.Enabled = false;
         }
     }
 }
