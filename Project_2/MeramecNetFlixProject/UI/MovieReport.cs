@@ -8,20 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
 namespace MeramecNetFlixProject.UI
 {
-    public partial class UserReport : Form
+    public partial class MovieReport : Form
     {
-        public UserReport()
+        public MovieReport()
         {
             InitializeComponent();
         }
 
-        private void UserReport_Load(object sender, EventArgs e)
+        private void MovieReport_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'teamgDataSet.Member' table. You can move, or remove it, as needed.
-            this.memberTableAdapter.Fill(this.teamgDataSet.Member);
+            // TODO: This line of code loads data into the 'teamgDataSet.Movie' table. You can move, or remove it, as needed.
+            this.movieTableAdapter.Fill(this.teamgDataSet.Movie);
 
             this.reportViewer1.RefreshReport();
         }

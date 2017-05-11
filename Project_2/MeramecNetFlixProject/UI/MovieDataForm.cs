@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MeramecNetFlixProject.DataAccessLayer;
 using MeramecNetFlixProject.BusinessObjects;
+using MeramecNetFlixProject.UI;
 
 namespace MeramecNetFlixProject
 {
@@ -220,6 +221,13 @@ namespace MeramecNetFlixProject
         private void clearButton_Click(object sender, EventArgs e)
         {
             cleanupUI();
+        }
+
+        private void movieReportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+             MovieReport Mreport = new MovieReport();
+             Mreport.ShowDialog();
+             Mreport = null;
         }
     }
 }

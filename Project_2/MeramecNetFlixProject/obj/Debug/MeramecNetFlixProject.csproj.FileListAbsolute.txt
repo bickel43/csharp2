@@ -98,3 +98,4 @@ C:\Users\Keegan\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\bin\Debug\M
 C:\Users\Keegan\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\MeramecNetFlixProject.UI.UserReport.resources
 C:\Users\Keegan\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\RdlCompile.cache
 C:\Users\Keegan\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\RdlCompile.compiled
+C:\Users\asinanovic\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\MeramecNetFlixProject.UI.MovieReport.resources

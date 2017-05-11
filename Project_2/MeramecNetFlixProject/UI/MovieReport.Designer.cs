@@ -1,6 +1,6 @@
 ﻿namespace MeramecNetFlixProject.UI
 {
-    partial class UserReport
+    partial class MovieReport
     {
         /// <summary>
         /// Required designer variable.
@@ -32,22 +32,21 @@
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.teamgDataSet = new MeramecNetFlixProject.teamgDataSet();
-            this.memberBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.memberTableAdapter = new MeramecNetFlixProject.teamgDataSetTableAdapters.MemberTableAdapter();
+            this.movieBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.movieTableAdapter = new MeramecNetFlixProject.teamgDataSetTableAdapters.MovieTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.teamgDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.memberBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.movieBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // reportViewer1
             // 
-            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             reportDataSource1.Name = "DataSet1";
-            reportDataSource1.Value = this.memberBindingSource;
+            reportDataSource1.Value = this.movieBindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "MeramecNetFlixProject.UI.Report1.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(0, 0);
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "MeramecNetFlixProject.UI.Report2.rdlc";
+            this.reportViewer1.Location = new System.Drawing.Point(12, 12);
             this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(1129, 546);
+            this.reportViewer1.Size = new System.Drawing.Size(1208, 540);
             this.reportViewer1.TabIndex = 0;
             // 
             // teamgDataSet
@@ -55,26 +54,26 @@
             this.teamgDataSet.DataSetName = "teamgDataSet";
             this.teamgDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // memberBindingSource
+            // movieBindingSource
             // 
-            this.memberBindingSource.DataMember = "Member";
-            this.memberBindingSource.DataSource = this.teamgDataSet;
+            this.movieBindingSource.DataMember = "Movie";
+            this.movieBindingSource.DataSource = this.teamgDataSet;
             // 
-            // memberTableAdapter
+            // movieTableAdapter
             // 
-            this.memberTableAdapter.ClearBeforeFill = true;
+            this.movieTableAdapter.ClearBeforeFill = true;
             // 
-            // UserReport
+            // MovieReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1129, 546);
+            this.ClientSize = new System.Drawing.Size(1232, 564);
             this.Controls.Add(this.reportViewer1);
-            this.Name = "UserReport";
-            this.Text = "UserReport";
-            this.Load += new System.EventHandler(this.UserReport_Load);
+            this.Name = "MovieReport";
+            this.Text = "MovieReport";
+            this.Load += new System.EventHandler(this.MovieReport_Load);
             ((System.ComponentModel.ISupportInitialize)(this.teamgDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.memberBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.movieBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -83,7 +82,7 @@
 
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
         private teamgDataSet teamgDataSet;
-        private System.Windows.Forms.BindingSource memberBindingSource;
-        private teamgDataSetTableAdapters.MemberTableAdapter memberTableAdapter;
+        private System.Windows.Forms.BindingSource movieBindingSource;
+        private teamgDataSetTableAdapters.MovieTableAdapter movieTableAdapter;
     }
 }
