@@ -23,6 +23,8 @@ namespace MeramecNetFlixProject
         private void MovieData_Load(object sender, EventArgs e)
         {
             movieDataViewGrid.DataSource = MovieDB.GetMovies();
+
+            movieNumberTextBox.Text = Convert.ToString(movieDataViewGrid.RowCount + 1);
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -90,6 +92,8 @@ namespace MeramecNetFlixProject
 
             //Populate the genre data grid on form load
             movieDataViewGrid.DataSource = MovieDB.GetMovies();
+            movieNumberTextBox.Text = Convert.ToString(movieDataViewGrid.RowCount + 1);
+
         }
 
         public void displayUserSelection()
@@ -228,6 +232,18 @@ namespace MeramecNetFlixProject
              MovieReport Mreport = new MovieReport();
              Mreport.ShowDialog();
              Mreport = null;
+        }
+
+        private void viewVendorsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            VendorForm openVendorForm = new VendorForm();
+            openVendorForm.ShowDialog();
+        }
+
+        private void genresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Genre openGenreForm = new Genre();
+            openGenreForm.ShowDialog();
         }
     }
 }

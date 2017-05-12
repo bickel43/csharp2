@@ -57,6 +57,7 @@
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.movieReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.addButton = new System.Windows.Forms.Button();
             this.updateButton = new System.Windows.Forms.Button();
             this.deleteButton = new System.Windows.Forms.Button();
@@ -65,7 +66,8 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.genericRowsAffectedLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.rowsAffectedLabel = new System.Windows.Forms.ToolStripStatusLabel();
-            this.helpToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewVendorsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.genresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.movieDataViewGrid)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -74,202 +76,214 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(15, 47);
+            this.label1.Location = new System.Drawing.Point(11, 38);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(107, 17);
+            this.label1.Size = new System.Drawing.Size(82, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Movie Number: ";
             // 
             // movieNumberTextBox
             // 
-            this.movieNumberTextBox.Location = new System.Drawing.Point(137, 42);
-            this.movieNumberTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.movieNumberTextBox.Location = new System.Drawing.Point(103, 34);
+            this.movieNumberTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.movieNumberTextBox.Name = "movieNumberTextBox";
-            this.movieNumberTextBox.Size = new System.Drawing.Size(64, 22);
+            this.movieNumberTextBox.Size = new System.Drawing.Size(49, 20);
             this.movieNumberTextBox.TabIndex = 1;
             // 
             // movieTitleTextBox
             // 
-            this.movieTitleTextBox.Location = new System.Drawing.Point(137, 68);
-            this.movieTitleTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.movieTitleTextBox.Location = new System.Drawing.Point(103, 55);
+            this.movieTitleTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.movieTitleTextBox.Name = "movieTitleTextBox";
-            this.movieTitleTextBox.Size = new System.Drawing.Size(169, 22);
+            this.movieTitleTextBox.Size = new System.Drawing.Size(128, 20);
             this.movieTitleTextBox.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(15, 73);
+            this.label2.Location = new System.Drawing.Point(11, 59);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(39, 17);
+            this.label2.Size = new System.Drawing.Size(30, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "Title:";
             // 
             // movieDescriptionTextBox
             // 
-            this.movieDescriptionTextBox.Location = new System.Drawing.Point(137, 94);
-            this.movieDescriptionTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.movieDescriptionTextBox.Location = new System.Drawing.Point(103, 76);
+            this.movieDescriptionTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.movieDescriptionTextBox.Multiline = true;
             this.movieDescriptionTextBox.Name = "movieDescriptionTextBox";
-            this.movieDescriptionTextBox.Size = new System.Drawing.Size(509, 114);
+            this.movieDescriptionTextBox.Size = new System.Drawing.Size(383, 93);
             this.movieDescriptionTextBox.TabIndex = 5;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(15, 98);
+            this.label3.Location = new System.Drawing.Point(11, 80);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 17);
+            this.label3.Size = new System.Drawing.Size(63, 13);
             this.label3.TabIndex = 4;
             this.label3.Text = "Description:";
             // 
             // movieReleaseYearTextBox
             // 
-            this.movieReleaseYearTextBox.Location = new System.Drawing.Point(137, 212);
-            this.movieReleaseYearTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.movieReleaseYearTextBox.Location = new System.Drawing.Point(103, 172);
+            this.movieReleaseYearTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.movieReleaseYearTextBox.Name = "movieReleaseYearTextBox";
-            this.movieReleaseYearTextBox.Size = new System.Drawing.Size(169, 22);
+            this.movieReleaseYearTextBox.Size = new System.Drawing.Size(128, 20);
             this.movieReleaseYearTextBox.TabIndex = 7;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(15, 215);
+            this.label4.Location = new System.Drawing.Point(11, 175);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(98, 17);
+            this.label4.Size = new System.Drawing.Size(74, 13);
             this.label4.TabIndex = 6;
             this.label4.Text = "Release Year:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(15, 241);
+            this.label5.Location = new System.Drawing.Point(11, 196);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(69, 17);
+            this.label5.Size = new System.Drawing.Size(53, 13);
             this.label5.TabIndex = 8;
             this.label5.Text = "Genre ID:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(337, 241);
+            this.label6.Location = new System.Drawing.Point(253, 196);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(53, 17);
+            this.label6.Size = new System.Drawing.Size(41, 13);
             this.label6.TabIndex = 10;
             this.label6.Text = "Rating:";
             // 
             // genreIDComboBox
             // 
             this.genreIDComboBox.FormattingEnabled = true;
-            this.genreIDComboBox.Location = new System.Drawing.Point(137, 236);
-            this.genreIDComboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.genreIDComboBox.Location = new System.Drawing.Point(103, 192);
+            this.genreIDComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.genreIDComboBox.Name = "genreIDComboBox";
-            this.genreIDComboBox.Size = new System.Drawing.Size(184, 24);
+            this.genreIDComboBox.Size = new System.Drawing.Size(139, 21);
             this.genreIDComboBox.TabIndex = 11;
             // 
             // ratingComboBox
             // 
             this.ratingComboBox.FormattingEnabled = true;
-            this.ratingComboBox.Location = new System.Drawing.Point(396, 236);
-            this.ratingComboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ratingComboBox.Location = new System.Drawing.Point(297, 192);
+            this.ratingComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ratingComboBox.Name = "ratingComboBox";
-            this.ratingComboBox.Size = new System.Drawing.Size(184, 24);
+            this.ratingComboBox.Size = new System.Drawing.Size(139, 21);
             this.ratingComboBox.TabIndex = 12;
             // 
             // mediaTypeComboBox
             // 
             this.mediaTypeComboBox.FormattingEnabled = true;
-            this.mediaTypeComboBox.Location = new System.Drawing.Point(651, 236);
-            this.mediaTypeComboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.mediaTypeComboBox.Location = new System.Drawing.Point(488, 192);
+            this.mediaTypeComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.mediaTypeComboBox.Name = "mediaTypeComboBox";
-            this.mediaTypeComboBox.Size = new System.Drawing.Size(184, 24);
+            this.mediaTypeComboBox.Size = new System.Drawing.Size(139, 21);
             this.mediaTypeComboBox.TabIndex = 14;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(592, 241);
+            this.label7.Location = new System.Drawing.Point(444, 196);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(50, 17);
+            this.label7.Size = new System.Drawing.Size(39, 13);
             this.label7.TabIndex = 13;
             this.label7.Text = "Media:";
             // 
             // retailCostTextBox
             // 
-            this.retailCostTextBox.Location = new System.Drawing.Point(137, 263);
-            this.retailCostTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.retailCostTextBox.Location = new System.Drawing.Point(103, 214);
+            this.retailCostTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.retailCostTextBox.Name = "retailCostTextBox";
-            this.retailCostTextBox.Size = new System.Drawing.Size(169, 22);
+            this.retailCostTextBox.Size = new System.Drawing.Size(128, 20);
             this.retailCostTextBox.TabIndex = 16;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(15, 268);
+            this.label8.Location = new System.Drawing.Point(11, 218);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(80, 17);
+            this.label8.Size = new System.Drawing.Size(61, 13);
             this.label8.TabIndex = 15;
             this.label8.Text = "Retail Cost:";
             // 
             // copiedOnHandTextBox
             // 
-            this.copiedOnHandTextBox.Location = new System.Drawing.Point(460, 263);
-            this.copiedOnHandTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.copiedOnHandTextBox.Location = new System.Drawing.Point(345, 214);
+            this.copiedOnHandTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.copiedOnHandTextBox.Name = "copiedOnHandTextBox";
-            this.copiedOnHandTextBox.Size = new System.Drawing.Size(91, 22);
+            this.copiedOnHandTextBox.Size = new System.Drawing.Size(69, 20);
             this.copiedOnHandTextBox.TabIndex = 20;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(321, 267);
+            this.label10.Location = new System.Drawing.Point(241, 217);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(132, 17);
+            this.label10.Size = new System.Drawing.Size(100, 13);
             this.label10.TabIndex = 19;
             this.label10.Text = "Copies in Inventory:";
             // 
             // imageFileNameTextBox
             // 
-            this.imageFileNameTextBox.Location = new System.Drawing.Point(137, 289);
-            this.imageFileNameTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imageFileNameTextBox.Location = new System.Drawing.Point(103, 235);
+            this.imageFileNameTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.imageFileNameTextBox.Name = "imageFileNameTextBox";
-            this.imageFileNameTextBox.Size = new System.Drawing.Size(169, 22);
+            this.imageFileNameTextBox.Size = new System.Drawing.Size(128, 20);
             this.imageFileNameTextBox.TabIndex = 22;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(15, 294);
+            this.label11.Location = new System.Drawing.Point(11, 239);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(117, 17);
+            this.label11.Size = new System.Drawing.Size(89, 13);
             this.label11.TabIndex = 21;
             this.label11.Text = "Image File Name:";
             // 
             // trailerLinkTextBox
             // 
-            this.trailerLinkTextBox.Location = new System.Drawing.Point(405, 289);
-            this.trailerLinkTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.trailerLinkTextBox.Location = new System.Drawing.Point(304, 235);
+            this.trailerLinkTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.trailerLinkTextBox.Name = "trailerLinkTextBox";
-            this.trailerLinkTextBox.Size = new System.Drawing.Size(429, 22);
+            this.trailerLinkTextBox.Size = new System.Drawing.Size(323, 20);
             this.trailerLinkTextBox.TabIndex = 24;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(321, 294);
+            this.label12.Location = new System.Drawing.Point(241, 239);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(83, 17);
+            this.label12.Size = new System.Drawing.Size(62, 13);
             this.label12.TabIndex = 23;
             this.label12.Text = "Trailer Link:";
             // 
             // movieDataViewGrid
             // 
             this.movieDataViewGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.movieDataViewGrid.Location = new System.Drawing.Point(17, 324);
-            this.movieDataViewGrid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.movieDataViewGrid.Location = new System.Drawing.Point(13, 263);
+            this.movieDataViewGrid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.movieDataViewGrid.Name = "movieDataViewGrid";
             this.movieDataViewGrid.RowTemplate.Height = 28;
-            this.movieDataViewGrid.Size = new System.Drawing.Size(816, 210);
+            this.movieDataViewGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.movieDataViewGrid.Size = new System.Drawing.Size(612, 171);
             this.movieDataViewGrid.TabIndex = 25;
             this.movieDataViewGrid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.movieDataViewGrid_CellClick);
             // 
@@ -282,8 +296,8 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(851, 26);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
+            this.menuStrip1.Size = new System.Drawing.Size(638, 24);
             this.menuStrip1.TabIndex = 26;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -292,28 +306,30 @@
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(44, 24);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 22);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(108, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(92, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // viewToolStripMenuItem
             // 
             this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.movieReportToolStripMenuItem});
+            this.movieReportToolStripMenuItem,
+            this.viewVendorsToolStripMenuItem,
+            this.genresToolStripMenuItem});
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
-            this.viewToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
+            this.viewToolStripMenuItem.Size = new System.Drawing.Size(44, 22);
             this.viewToolStripMenuItem.Text = "View";
             // 
             // movieReportToolStripMenuItem
             // 
             this.movieReportToolStripMenuItem.Name = "movieReportToolStripMenuItem";
-            this.movieReportToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.movieReportToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.movieReportToolStripMenuItem.Text = "Movie Report";
             this.movieReportToolStripMenuItem.Click += new System.EventHandler(this.movieReportToolStripMenuItem_Click);
             // 
@@ -322,16 +338,22 @@
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.helpToolStripMenuItem1});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 22);
             this.helpToolStripMenuItem.Text = "Help";
+            // 
+            // helpToolStripMenuItem1
+            // 
+            this.helpToolStripMenuItem1.Name = "helpToolStripMenuItem1";
+            this.helpToolStripMenuItem1.Size = new System.Drawing.Size(99, 22);
+            this.helpToolStripMenuItem1.Text = "Help";
             // 
             // addButton
             // 
             this.addButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addButton.Location = new System.Drawing.Point(84, 540);
-            this.addButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.addButton.Location = new System.Drawing.Point(63, 439);
+            this.addButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(132, 50);
+            this.addButton.Size = new System.Drawing.Size(99, 41);
             this.addButton.TabIndex = 27;
             this.addButton.Text = "Add";
             this.addButton.UseVisualStyleBackColor = true;
@@ -340,10 +362,10 @@
             // updateButton
             // 
             this.updateButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.updateButton.Location = new System.Drawing.Point(221, 539);
-            this.updateButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.updateButton.Location = new System.Drawing.Point(166, 438);
+            this.updateButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.updateButton.Name = "updateButton";
-            this.updateButton.Size = new System.Drawing.Size(132, 50);
+            this.updateButton.Size = new System.Drawing.Size(99, 41);
             this.updateButton.TabIndex = 29;
             this.updateButton.Text = "Update";
             this.updateButton.UseVisualStyleBackColor = true;
@@ -352,10 +374,10 @@
             // deleteButton
             // 
             this.deleteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.deleteButton.Location = new System.Drawing.Point(359, 539);
-            this.deleteButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.deleteButton.Location = new System.Drawing.Point(269, 438);
+            this.deleteButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.deleteButton.Name = "deleteButton";
-            this.deleteButton.Size = new System.Drawing.Size(132, 50);
+            this.deleteButton.Size = new System.Drawing.Size(99, 41);
             this.deleteButton.TabIndex = 30;
             this.deleteButton.Text = "Delete";
             this.deleteButton.UseVisualStyleBackColor = true;
@@ -364,10 +386,10 @@
             // clearButton
             // 
             this.clearButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.clearButton.Location = new System.Drawing.Point(495, 539);
-            this.clearButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.clearButton.Location = new System.Drawing.Point(371, 438);
+            this.clearButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.clearButton.Name = "clearButton";
-            this.clearButton.Size = new System.Drawing.Size(132, 50);
+            this.clearButton.Size = new System.Drawing.Size(99, 41);
             this.clearButton.TabIndex = 31;
             this.clearButton.Text = "Clear";
             this.clearButton.UseVisualStyleBackColor = true;
@@ -376,10 +398,10 @@
             // exitButton
             // 
             this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.exitButton.Location = new System.Drawing.Point(632, 539);
-            this.exitButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.exitButton.Location = new System.Drawing.Point(474, 438);
+            this.exitButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(132, 50);
+            this.exitButton.Size = new System.Drawing.Size(99, 41);
             this.exitButton.TabIndex = 32;
             this.exitButton.Text = "Exit";
             this.exitButton.UseVisualStyleBackColor = true;
@@ -391,10 +413,10 @@
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.genericRowsAffectedLabel,
             this.rowsAffectedLabel});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 601);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 487);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 12, 0);
-            this.statusStrip1.Size = new System.Drawing.Size(851, 25);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 9, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(638, 22);
             this.statusStrip1.TabIndex = 33;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -402,28 +424,36 @@
             // 
             this.genericRowsAffectedLabel.BackColor = System.Drawing.SystemColors.Control;
             this.genericRowsAffectedLabel.Name = "genericRowsAffectedLabel";
-            this.genericRowsAffectedLabel.Size = new System.Drawing.Size(91, 20);
+            this.genericRowsAffectedLabel.Size = new System.Drawing.Size(74, 17);
             this.genericRowsAffectedLabel.Text = "Last Activity:";
             // 
             // rowsAffectedLabel
             // 
             this.rowsAffectedLabel.BackColor = System.Drawing.SystemColors.Control;
             this.rowsAffectedLabel.Name = "rowsAffectedLabel";
-            this.rowsAffectedLabel.Size = new System.Drawing.Size(131, 20);
+            this.rowsAffectedLabel.Size = new System.Drawing.Size(105, 17);
             this.rowsAffectedLabel.Text = "No Changes Made";
             // 
-            // helpToolStripMenuItem1
+            // viewVendorsToolStripMenuItem
             // 
-            this.helpToolStripMenuItem1.Name = "helpToolStripMenuItem1";
-            this.helpToolStripMenuItem1.Size = new System.Drawing.Size(181, 26);
-            this.helpToolStripMenuItem1.Text = "Help";
+            this.viewVendorsToolStripMenuItem.Name = "viewVendorsToolStripMenuItem";
+            this.viewVendorsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.viewVendorsToolStripMenuItem.Text = "Vendors";
+            this.viewVendorsToolStripMenuItem.Click += new System.EventHandler(this.viewVendorsToolStripMenuItem_Click);
+            // 
+            // genresToolStripMenuItem
+            // 
+            this.genresToolStripMenuItem.Name = "genresToolStripMenuItem";
+            this.genresToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.genresToolStripMenuItem.Text = "Genres";
+            this.genresToolStripMenuItem.Click += new System.EventHandler(this.genresToolStripMenuItem_Click);
             // 
             // MovieData
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(851, 626);
+            this.ClientSize = new System.Drawing.Size(638, 509);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.clearButton);
@@ -455,7 +485,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MovieData";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MovieData";
@@ -510,5 +540,7 @@
         private System.Windows.Forms.ToolStripStatusLabel genericRowsAffectedLabel;
         private System.Windows.Forms.ToolStripStatusLabel rowsAffectedLabel;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem viewVendorsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem genresToolStripMenuItem;
     }
 }
