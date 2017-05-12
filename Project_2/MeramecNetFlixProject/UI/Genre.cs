@@ -110,6 +110,25 @@ namespace MeramecNetFlixProject
                 genreNameTextBox.Text = genreName;
             }
         }
+        private void displayGenreSelection()
+        {
+            try
+            {
+                if (genreDataViewGrid.SelectedRows.Count > 0)
+                {
+                    string memberNumber = genreDataViewGrid.SelectedRows[0].Cells[0].Value + string.Empty;
+                    string joindate = genreDataViewGrid.SelectedRows[0].Cells[1].Value + string.Empty;
+
+                    genreIDTextBox.Text = memberNumber.ToString();
+                    genreNameTextBox.Text = joindate.ToString();
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -126,6 +145,10 @@ namespace MeramecNetFlixProject
             }
         
         }
-          
+
+        private void genreDataViewGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            this.displayGenreSelection();
+        }
     }
 }

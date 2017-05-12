@@ -44,16 +44,17 @@
             // 
             this.genreDataViewGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.genreDataViewGrid.Location = new System.Drawing.Point(16, 98);
-            this.genreDataViewGrid.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.genreDataViewGrid.Margin = new System.Windows.Forms.Padding(4);
             this.genreDataViewGrid.Name = "genreDataViewGrid";
             this.genreDataViewGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.genreDataViewGrid.Size = new System.Drawing.Size(599, 239);
             this.genreDataViewGrid.TabIndex = 0;
+            this.genreDataViewGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.genreDataViewGrid_CellContentClick);
             // 
             // genreIDTextBox
             // 
             this.genreIDTextBox.Location = new System.Drawing.Point(120, 15);
-            this.genreIDTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.genreIDTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.genreIDTextBox.Name = "genreIDTextBox";
             this.genreIDTextBox.Size = new System.Drawing.Size(168, 22);
             this.genreIDTextBox.TabIndex = 1;
@@ -61,7 +62,7 @@
             // genreNameTextBox
             // 
             this.genreNameTextBox.Location = new System.Drawing.Point(120, 47);
-            this.genreNameTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.genreNameTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.genreNameTextBox.Name = "genreNameTextBox";
             this.genreNameTextBox.Size = new System.Drawing.Size(168, 22);
             this.genreNameTextBox.TabIndex = 2;
@@ -91,7 +92,7 @@
             this.addGenreButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addGenreButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addGenreButton.Location = new System.Drawing.Point(16, 358);
-            this.addGenreButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.addGenreButton.Margin = new System.Windows.Forms.Padding(4);
             this.addGenreButton.Name = "addGenreButton";
             this.addGenreButton.Size = new System.Drawing.Size(196, 59);
             this.addGenreButton.TabIndex = 5;
@@ -104,7 +105,7 @@
             this.updateGenreButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.updateGenreButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.updateGenreButton.Location = new System.Drawing.Point(219, 358);
-            this.updateGenreButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.updateGenreButton.Margin = new System.Windows.Forms.Padding(4);
             this.updateGenreButton.Name = "updateGenreButton";
             this.updateGenreButton.Size = new System.Drawing.Size(196, 59);
             this.updateGenreButton.TabIndex = 7;
@@ -117,7 +118,7 @@
             this.deleteGenreButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deleteGenreButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deleteGenreButton.Location = new System.Drawing.Point(419, 358);
-            this.deleteGenreButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.deleteGenreButton.Margin = new System.Windows.Forms.Padding(4);
             this.deleteGenreButton.Name = "deleteGenreButton";
             this.deleteGenreButton.Size = new System.Drawing.Size(196, 59);
             this.deleteGenreButton.TabIndex = 8;
@@ -150,7 +151,7 @@
             this.Controls.Add(this.genreNameTextBox);
             this.Controls.Add(this.genreIDTextBox);
             this.Controls.Add(this.genreDataViewGrid);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Genre";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Genre";
