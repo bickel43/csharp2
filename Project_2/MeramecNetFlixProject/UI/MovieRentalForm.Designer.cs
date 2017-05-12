@@ -59,7 +59,7 @@
             this.rentalDataGridView.Name = "rentalDataGridView";
             this.rentalDataGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.rentalDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.rentalDataGridView.Size = new System.Drawing.Size(434, 395);
+            this.rentalDataGridView.Size = new System.Drawing.Size(434, 456);
             this.rentalDataGridView.TabIndex = 0;
             this.rentalDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.rentalDataGridView_CellClick);
             // 
@@ -86,29 +86,29 @@
             // movieTrailerContainer
             // 
             this.movieTrailerContainer.Enabled = true;
-            this.movieTrailerContainer.Location = new System.Drawing.Point(457, 218);
+            this.movieTrailerContainer.Location = new System.Drawing.Point(457, 241);
             this.movieTrailerContainer.Name = "movieTrailerContainer";
             this.movieTrailerContainer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("movieTrailerContainer.OcxState")));
-            this.movieTrailerContainer.Size = new System.Drawing.Size(357, 223);
+            this.movieTrailerContainer.Size = new System.Drawing.Size(437, 261);
             this.movieTrailerContainer.TabIndex = 4;
             // 
             // movieDescTextBox
             // 
             this.movieDescTextBox.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.movieDescTextBox.Location = new System.Drawing.Point(457, 106);
+            this.movieDescTextBox.Location = new System.Drawing.Point(457, 116);
             this.movieDescTextBox.Multiline = true;
             this.movieDescTextBox.Name = "movieDescTextBox";
             this.movieDescTextBox.ReadOnly = true;
-            this.movieDescTextBox.Size = new System.Drawing.Size(357, 106);
+            this.movieDescTextBox.Size = new System.Drawing.Size(437, 119);
             this.movieDescTextBox.TabIndex = 5;
             // 
             // rentalButton
             // 
             this.rentalButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rentalButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rentalButton.Location = new System.Drawing.Point(292, 447);
+            this.rentalButton.Location = new System.Drawing.Point(292, 508);
             this.rentalButton.Name = "rentalButton";
-            this.rentalButton.Size = new System.Drawing.Size(522, 49);
+            this.rentalButton.Size = new System.Drawing.Size(602, 49);
             this.rentalButton.TabIndex = 6;
             this.rentalButton.Text = "Rent Movie";
             this.rentalButton.UseVisualStyleBackColor = true;
@@ -118,7 +118,7 @@
             // 
             this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exitButton.Location = new System.Drawing.Point(12, 447);
+            this.exitButton.Location = new System.Drawing.Point(12, 508);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(274, 49);
             this.exitButton.TabIndex = 7;
@@ -132,7 +132,7 @@
             this.fileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(826, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(906, 24);
             this.menuStrip1.TabIndex = 8;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -147,7 +147,7 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(92, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -155,7 +155,7 @@
             // 
             this.rentalPrice.AutoSize = true;
             this.rentalPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rentalPrice.Location = new System.Drawing.Point(550, 75);
+            this.rentalPrice.Location = new System.Drawing.Point(455, 96);
             this.rentalPrice.Name = "rentalPrice";
             this.rentalPrice.Size = new System.Drawing.Size(81, 17);
             this.rentalPrice.TabIndex = 9;
@@ -165,8 +165,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(826, 508);
+            this.ClientSize = new System.Drawing.Size(906, 569);
             this.Controls.Add(this.rentalPrice);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.rentalButton);

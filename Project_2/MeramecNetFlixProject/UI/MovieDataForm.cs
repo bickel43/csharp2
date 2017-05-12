@@ -71,7 +71,7 @@ namespace MeramecNetFlixProject
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message,"Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message,"Addition Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
                 //MessageBox.Show("Error when adding user. \nMake sure all fields are populated.", "User Addition Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
@@ -129,10 +129,9 @@ namespace MeramecNetFlixProject
 
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw;
+                MessageBox.Show(ex.Message, "Selection Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -244,6 +243,25 @@ namespace MeramecNetFlixProject
         {
             Genre openGenreForm = new Genre();
             openGenreForm.ShowDialog();
+        }
+
+        private void movienumberOverrideCheckbox_CheckedChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (movieNumberTextBox.ReadOnly == true)
+                {
+                    movieNumberTextBox.ReadOnly = false;
+                }
+                else
+                {
+                    movieNumberTextBox.ReadOnly = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Override Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

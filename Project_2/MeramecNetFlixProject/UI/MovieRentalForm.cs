@@ -90,9 +90,9 @@ namespace MeramecNetFlixProject.UI
                     rentalPrice.Text = "$" + movieRetailCost;
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                MessageBox.Show(ex.Message, "Selection Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

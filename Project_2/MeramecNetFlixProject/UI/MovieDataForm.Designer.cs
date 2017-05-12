@@ -56,8 +56,8 @@
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.movieReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewVendorsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.genresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addButton = new System.Windows.Forms.Button();
             this.updateButton = new System.Windows.Forms.Button();
             this.deleteButton = new System.Windows.Forms.Button();
@@ -66,8 +66,7 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.genericRowsAffectedLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.rowsAffectedLabel = new System.Windows.Forms.ToolStripStatusLabel();
-            this.viewVendorsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.genresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.movienumberOverrideCheckbox = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.movieDataViewGrid)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -86,15 +85,16 @@
             // movieNumberTextBox
             // 
             this.movieNumberTextBox.Location = new System.Drawing.Point(103, 34);
-            this.movieNumberTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.movieNumberTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.movieNumberTextBox.Name = "movieNumberTextBox";
+            this.movieNumberTextBox.ReadOnly = true;
             this.movieNumberTextBox.Size = new System.Drawing.Size(49, 20);
             this.movieNumberTextBox.TabIndex = 1;
             // 
             // movieTitleTextBox
             // 
             this.movieTitleTextBox.Location = new System.Drawing.Point(103, 55);
-            this.movieTitleTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.movieTitleTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.movieTitleTextBox.Name = "movieTitleTextBox";
             this.movieTitleTextBox.Size = new System.Drawing.Size(128, 20);
             this.movieTitleTextBox.TabIndex = 3;
@@ -112,7 +112,7 @@
             // movieDescriptionTextBox
             // 
             this.movieDescriptionTextBox.Location = new System.Drawing.Point(103, 76);
-            this.movieDescriptionTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.movieDescriptionTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.movieDescriptionTextBox.Multiline = true;
             this.movieDescriptionTextBox.Name = "movieDescriptionTextBox";
             this.movieDescriptionTextBox.Size = new System.Drawing.Size(383, 93);
@@ -131,7 +131,7 @@
             // movieReleaseYearTextBox
             // 
             this.movieReleaseYearTextBox.Location = new System.Drawing.Point(103, 172);
-            this.movieReleaseYearTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.movieReleaseYearTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.movieReleaseYearTextBox.Name = "movieReleaseYearTextBox";
             this.movieReleaseYearTextBox.Size = new System.Drawing.Size(128, 20);
             this.movieReleaseYearTextBox.TabIndex = 7;
@@ -169,17 +169,41 @@
             // genreIDComboBox
             // 
             this.genreIDComboBox.FormattingEnabled = true;
+            this.genreIDComboBox.Items.AddRange(new object[] {
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08",
+            "09",
+            "10",
+            "11"});
             this.genreIDComboBox.Location = new System.Drawing.Point(103, 192);
-            this.genreIDComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.genreIDComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.genreIDComboBox.Name = "genreIDComboBox";
             this.genreIDComboBox.Size = new System.Drawing.Size(139, 21);
+            this.genreIDComboBox.Sorted = true;
             this.genreIDComboBox.TabIndex = 11;
             // 
             // ratingComboBox
             // 
             this.ratingComboBox.FormattingEnabled = true;
+            this.ratingComboBox.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
             this.ratingComboBox.Location = new System.Drawing.Point(297, 192);
-            this.ratingComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ratingComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.ratingComboBox.Name = "ratingComboBox";
             this.ratingComboBox.Size = new System.Drawing.Size(139, 21);
             this.ratingComboBox.TabIndex = 12;
@@ -187,8 +211,12 @@
             // mediaTypeComboBox
             // 
             this.mediaTypeComboBox.FormattingEnabled = true;
+            this.mediaTypeComboBox.Items.AddRange(new object[] {
+            "Online",
+            "DVD",
+            "BluRay"});
             this.mediaTypeComboBox.Location = new System.Drawing.Point(488, 192);
-            this.mediaTypeComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mediaTypeComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.mediaTypeComboBox.Name = "mediaTypeComboBox";
             this.mediaTypeComboBox.Size = new System.Drawing.Size(139, 21);
             this.mediaTypeComboBox.TabIndex = 14;
@@ -206,7 +234,7 @@
             // retailCostTextBox
             // 
             this.retailCostTextBox.Location = new System.Drawing.Point(103, 214);
-            this.retailCostTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.retailCostTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.retailCostTextBox.Name = "retailCostTextBox";
             this.retailCostTextBox.Size = new System.Drawing.Size(128, 20);
             this.retailCostTextBox.TabIndex = 16;
@@ -224,7 +252,7 @@
             // copiedOnHandTextBox
             // 
             this.copiedOnHandTextBox.Location = new System.Drawing.Point(345, 214);
-            this.copiedOnHandTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.copiedOnHandTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.copiedOnHandTextBox.Name = "copiedOnHandTextBox";
             this.copiedOnHandTextBox.Size = new System.Drawing.Size(69, 20);
             this.copiedOnHandTextBox.TabIndex = 20;
@@ -242,7 +270,7 @@
             // imageFileNameTextBox
             // 
             this.imageFileNameTextBox.Location = new System.Drawing.Point(103, 235);
-            this.imageFileNameTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.imageFileNameTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.imageFileNameTextBox.Name = "imageFileNameTextBox";
             this.imageFileNameTextBox.Size = new System.Drawing.Size(128, 20);
             this.imageFileNameTextBox.TabIndex = 22;
@@ -260,7 +288,7 @@
             // trailerLinkTextBox
             // 
             this.trailerLinkTextBox.Location = new System.Drawing.Point(304, 235);
-            this.trailerLinkTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.trailerLinkTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.trailerLinkTextBox.Name = "trailerLinkTextBox";
             this.trailerLinkTextBox.Size = new System.Drawing.Size(323, 20);
             this.trailerLinkTextBox.TabIndex = 24;
@@ -279,7 +307,7 @@
             // 
             this.movieDataViewGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.movieDataViewGrid.Location = new System.Drawing.Point(13, 263);
-            this.movieDataViewGrid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.movieDataViewGrid.Margin = new System.Windows.Forms.Padding(2);
             this.movieDataViewGrid.Name = "movieDataViewGrid";
             this.movieDataViewGrid.RowTemplate.Height = 28;
             this.movieDataViewGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -292,8 +320,7 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
-            this.viewToolStripMenuItem,
-            this.helpToolStripMenuItem});
+            this.viewToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
@@ -329,29 +356,29 @@
             // movieReportToolStripMenuItem
             // 
             this.movieReportToolStripMenuItem.Name = "movieReportToolStripMenuItem";
-            this.movieReportToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.movieReportToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
             this.movieReportToolStripMenuItem.Text = "Movie Report";
             this.movieReportToolStripMenuItem.Click += new System.EventHandler(this.movieReportToolStripMenuItem_Click);
             // 
-            // helpToolStripMenuItem
+            // viewVendorsToolStripMenuItem
             // 
-            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.helpToolStripMenuItem1});
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 22);
-            this.helpToolStripMenuItem.Text = "Help";
+            this.viewVendorsToolStripMenuItem.Name = "viewVendorsToolStripMenuItem";
+            this.viewVendorsToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.viewVendorsToolStripMenuItem.Text = "Vendors";
+            this.viewVendorsToolStripMenuItem.Click += new System.EventHandler(this.viewVendorsToolStripMenuItem_Click);
             // 
-            // helpToolStripMenuItem1
+            // genresToolStripMenuItem
             // 
-            this.helpToolStripMenuItem1.Name = "helpToolStripMenuItem1";
-            this.helpToolStripMenuItem1.Size = new System.Drawing.Size(99, 22);
-            this.helpToolStripMenuItem1.Text = "Help";
+            this.genresToolStripMenuItem.Name = "genresToolStripMenuItem";
+            this.genresToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.genresToolStripMenuItem.Text = "Genres";
+            this.genresToolStripMenuItem.Click += new System.EventHandler(this.genresToolStripMenuItem_Click);
             // 
             // addButton
             // 
             this.addButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addButton.Location = new System.Drawing.Point(63, 439);
-            this.addButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.addButton.Margin = new System.Windows.Forms.Padding(2);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(99, 41);
             this.addButton.TabIndex = 27;
@@ -363,7 +390,7 @@
             // 
             this.updateButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.updateButton.Location = new System.Drawing.Point(166, 438);
-            this.updateButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.updateButton.Margin = new System.Windows.Forms.Padding(2);
             this.updateButton.Name = "updateButton";
             this.updateButton.Size = new System.Drawing.Size(99, 41);
             this.updateButton.TabIndex = 29;
@@ -375,7 +402,7 @@
             // 
             this.deleteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deleteButton.Location = new System.Drawing.Point(269, 438);
-            this.deleteButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.deleteButton.Margin = new System.Windows.Forms.Padding(2);
             this.deleteButton.Name = "deleteButton";
             this.deleteButton.Size = new System.Drawing.Size(99, 41);
             this.deleteButton.TabIndex = 30;
@@ -387,7 +414,7 @@
             // 
             this.clearButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.clearButton.Location = new System.Drawing.Point(371, 438);
-            this.clearButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.clearButton.Margin = new System.Windows.Forms.Padding(2);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(99, 41);
             this.clearButton.TabIndex = 31;
@@ -399,7 +426,7 @@
             // 
             this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exitButton.Location = new System.Drawing.Point(474, 438);
-            this.exitButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.exitButton.Margin = new System.Windows.Forms.Padding(2);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(99, 41);
             this.exitButton.TabIndex = 32;
@@ -434,19 +461,16 @@
             this.rowsAffectedLabel.Size = new System.Drawing.Size(105, 17);
             this.rowsAffectedLabel.Text = "No Changes Made";
             // 
-            // viewVendorsToolStripMenuItem
+            // movienumberOverrideCheckbox
             // 
-            this.viewVendorsToolStripMenuItem.Name = "viewVendorsToolStripMenuItem";
-            this.viewVendorsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.viewVendorsToolStripMenuItem.Text = "Vendors";
-            this.viewVendorsToolStripMenuItem.Click += new System.EventHandler(this.viewVendorsToolStripMenuItem_Click);
-            // 
-            // genresToolStripMenuItem
-            // 
-            this.genresToolStripMenuItem.Name = "genresToolStripMenuItem";
-            this.genresToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.genresToolStripMenuItem.Text = "Genres";
-            this.genresToolStripMenuItem.Click += new System.EventHandler(this.genresToolStripMenuItem_Click);
+            this.movienumberOverrideCheckbox.AutoSize = true;
+            this.movienumberOverrideCheckbox.Location = new System.Drawing.Point(158, 38);
+            this.movienumberOverrideCheckbox.Name = "movienumberOverrideCheckbox";
+            this.movienumberOverrideCheckbox.Size = new System.Drawing.Size(138, 17);
+            this.movienumberOverrideCheckbox.TabIndex = 34;
+            this.movienumberOverrideCheckbox.Text = "Override Movie Number";
+            this.movienumberOverrideCheckbox.UseVisualStyleBackColor = true;
+            this.movienumberOverrideCheckbox.CheckedChanged += new System.EventHandler(this.movienumberOverrideCheckbox_CheckedChanged);
             // 
             // MovieData
             // 
@@ -454,6 +478,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(638, 509);
+            this.Controls.Add(this.movienumberOverrideCheckbox);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.clearButton);
@@ -485,7 +510,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MovieData";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MovieData";
@@ -530,7 +555,6 @@
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem movieReportToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.Button addButton;
         private System.Windows.Forms.Button updateButton;
         private System.Windows.Forms.Button deleteButton;
@@ -539,8 +563,8 @@
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel genericRowsAffectedLabel;
         private System.Windows.Forms.ToolStripStatusLabel rowsAffectedLabel;
-        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem viewVendorsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem genresToolStripMenuItem;
+        private System.Windows.Forms.CheckBox movienumberOverrideCheckbox;
     }
 }

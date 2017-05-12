@@ -29,65 +29,87 @@ namespace MeramecNetFlixProject
 
         private void addGenreButton_Click(object sender, EventArgs e)
         {
-            GenreClass myGenreObj = new GenreClass();
-
-            myGenreObj.GenreID = genreIDTextBox.Text;
-            myGenreObj.GenreName = genreNameTextBox.Text;
-
-            bool recordAdded =  GenreDB.AddGenre(myGenreObj);
-            
-            //if record is true, or false, do some stuff
-            if (recordAdded == true)
+            try
             {
-                MessageBox.Show("Record added");
+                GenreClass myGenreObj = new GenreClass();
+
+                myGenreObj.GenreID = genreIDTextBox.Text;
+                myGenreObj.GenreName = genreNameTextBox.Text;
+
+                bool recordAdded = GenreDB.AddGenre(myGenreObj);
+
+                //if record is true, or false, do some stuff
+                if (recordAdded == true)
+                {
+                    MessageBox.Show("Record added");
+                }
+                else
+                {
+                    MessageBox.Show("Record not added");
+                }
+                cleanupUI();
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Record not added");
+                MessageBox.Show(ex.Message, "Addition Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            cleanupUI();
         }
 
         private void updateGenreButton_Click(object sender, EventArgs e)
         {
-            GenreClass myGenreObj = new GenreClass();
-
-            myGenreObj.GenreID = genreIDTextBox.Text;
-            myGenreObj.GenreName = genreNameTextBox.Text;
-
-            bool recordUpdated = GenreDB.UpdateGenre(myGenreObj);
-
-            //if record is true, or false, do some stuff
-            if (recordUpdated == true)
+            try
             {
-                MessageBox.Show("Record Updated");
+                GenreClass myGenreObj = new GenreClass();
+
+                myGenreObj.GenreID = genreIDTextBox.Text;
+                myGenreObj.GenreName = genreNameTextBox.Text;
+
+                bool recordUpdated = GenreDB.UpdateGenre(myGenreObj);
+
+                //if record is true, or false, do some stuff
+                if (recordUpdated == true)
+                {
+                    MessageBox.Show("Record Updated");
+                }
+                else
+                {
+                    MessageBox.Show("Record Not Updated");
+                }
+                cleanupUI();
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Record Not Updated");
+                MessageBox.Show(ex.Message, "Update Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
             }
-            cleanupUI();
         }
 
         private void deleteGenreButton_Click(object sender, EventArgs e)
         {
-            GenreClass myGenreObj = new GenreClass();
-
-            myGenreObj.GenreID = genreIDTextBox.Text;
-            myGenreObj.GenreName = genreNameTextBox.Text;
-
-            bool recordDeleted = GenreDB.DeleteGenre(myGenreObj);
-
-            //if record is true, or false, do some stuff
-            if (recordDeleted == true)
+            try
             {
-                MessageBox.Show("Record Deleted");
+                GenreClass myGenreObj = new GenreClass();
+
+                myGenreObj.GenreID = genreIDTextBox.Text;
+                myGenreObj.GenreName = genreNameTextBox.Text;
+
+                bool recordDeleted = GenreDB.DeleteGenre(myGenreObj);
+
+                //if record is true, or false, do some stuff
+                if (recordDeleted == true)
+                {
+                    MessageBox.Show("Record Deleted");
+                }
+                else
+                {
+                    MessageBox.Show("Record Not Deleted");
+                }
+                cleanupUI();
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Record Not Deleted");
+                MessageBox.Show(ex.Message, "Deletion Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            cleanupUI();
         }
 
         private void cleanupUI()
@@ -99,46 +121,45 @@ namespace MeramecNetFlixProject
             //Populate the genre data grid on form load
             genreDataViewGrid.DataSource = GenreDB.GetAllGenres();
         }
-        private void gridView_SelectionChanged()
-        {
-            foreach (DataGridViewRow row in genreDataViewGrid.SelectedRows)
-            {
-                string genreID = row.Cells[0].Value.ToString();
-                string genreName = row.Cells[1].Value.ToString();
-
-                genreIDTextBox.Text = genreID;
-                genreNameTextBox.Text = genreName;
-            }
-        }
         private void displayGenreSelection()
         {
             try
             {
                 if (genreDataViewGrid.SelectedRows.Count > 0)
                 {
-                    string memberNumber = genreDataViewGrid.SelectedRows[0].Cells[0].Value + string.Empty;
-                    string joindate = genreDataViewGrid.SelectedRows[0].Cells[1].Value + string.Empty;
+                    //Populate the selected genre into the UI fields
+                    string genreID = genreDataViewGrid.SelectedRows[0].Cells[0].Value + string.Empty;
+                    string genreName = genreDataViewGrid.SelectedRows[0].Cells[1].Value + string.Empty;
 
-                    genreIDTextBox.Text = memberNumber.ToString();
-                    genreNameTextBox.Text = joindate.ToString();
+                    genreIDTextBox.Text = genreID.ToString();
+                    genreNameTextBox.Text = genreName.ToString();
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw;
+                MessageBox.Show(ex.Message, "Selection Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //throw;
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void genreDataViewGrid_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-         
-        
+            displayGenreSelection();
         }
 
-        private void genreDataViewGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.displayGenreSelection();
+            this.Close();
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void clearButton_Click(object sender, EventArgs e)
+        {
+            cleanupUI();
         }
     }
 }

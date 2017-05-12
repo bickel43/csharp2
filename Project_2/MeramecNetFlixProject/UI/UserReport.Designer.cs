@@ -30,35 +30,38 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.teamgDataSet = new MeramecNetFlixProject.teamgDataSet();
             this.memberBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.teamgDataSet = new MeramecNetFlixProject.teamgDataSet();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.memberTableAdapter = new MeramecNetFlixProject.teamgDataSetTableAdapters.MemberTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.teamgDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.memberBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.teamgDataSet)).BeginInit();
             this.SuspendLayout();
             // 
-            // reportViewer1
+            // memberBindingSource
             // 
-            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            reportDataSource1.Name = "DataSet1";
-            reportDataSource1.Value = this.memberBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "MeramecNetFlixProject.UI.Report1.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(0, 0);
-            this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(1129, 546);
-            this.reportViewer1.TabIndex = 0;
+            this.memberBindingSource.DataMember = "Member";
+            this.memberBindingSource.DataSource = this.teamgDataSet;
             // 
             // teamgDataSet
             // 
             this.teamgDataSet.DataSetName = "teamgDataSet";
             this.teamgDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // memberBindingSource
+            // reportViewer1
             // 
-            this.memberBindingSource.DataMember = "Member";
-            this.memberBindingSource.DataSource = this.teamgDataSet;
+            this.reportViewer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            reportDataSource1.Name = "DataSet1";
+            reportDataSource1.Value = this.memberBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "MeramecNetFlixProject.UI.Report1.rdlc";
+            this.reportViewer1.Location = new System.Drawing.Point(0, 0);
+            this.reportViewer1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.Size = new System.Drawing.Size(847, 444);
+            this.reportViewer1.TabIndex = 0;
             // 
             // memberTableAdapter
             // 
@@ -66,15 +69,17 @@
             // 
             // UserReport
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1129, 546);
+            this.ClientSize = new System.Drawing.Size(847, 444);
             this.Controls.Add(this.reportViewer1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "UserReport";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UserReport";
             this.Load += new System.EventHandler(this.UserReport_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.teamgDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.memberBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.teamgDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -266,10 +266,9 @@ namespace MeramecNetFlixProject
                     photo = photo.ToString();
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw;
+                MessageBox.Show(ex.Message, "Selection Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         
@@ -315,10 +314,9 @@ namespace MeramecNetFlixProject
                 }
                 cleanupUI();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                MessageBox.Show("Error when updating user. \nMake sure a record is selected.","User Update Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                //throw;
+                MessageBox.Show(ex.Message,"User Update Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -328,12 +326,7 @@ namespace MeramecNetFlixProject
             report.ShowDialog();
             report = null;
         }
-   
-
-        private void helpToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-
-        }
+  
 
         private void overrideMemberNumber_CheckedChanged(object sender, EventArgs e)
         {

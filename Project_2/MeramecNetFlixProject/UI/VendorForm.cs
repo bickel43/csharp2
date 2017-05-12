@@ -38,26 +38,34 @@ namespace MeramecNetFlixProject.UI
 
         private void addVendorButton_Click(object sender, EventArgs e)
         {
-            VendorClass myVendorObj = new VendorClass();
-
-            myVendorObj.VendorID = Convert.ToInt32(vendorIDTextBox.Text);
-            myVendorObj.VendorName = vendorNameTextBox.Text;
-            myVendorObj.VendorPhone1 = vendorPhone1TextBox.Text;
-            myVendorObj.VendorPhone2 = vendorPhone2TextBox.Text;
-
-            bool recordAdded = VendorDB.AddVendor(myVendorObj);
-
-            //if record is true, or false, do some stuff
-            if (recordAdded == true)
+            try
             {
-                //MessageBox.Show("Record added");
-                rowsAffectedStatusStripLabel.Text = "1 row added";
+                VendorClass myVendorObj = new VendorClass();
+
+                myVendorObj.VendorID = Convert.ToInt32(vendorIDTextBox.Text);
+                myVendorObj.VendorName = vendorNameTextBox.Text;
+                myVendorObj.VendorPhone1 = vendorPhone1TextBox.Text;
+                myVendorObj.VendorPhone2 = vendorPhone2TextBox.Text;
+
+                bool recordAdded = VendorDB.AddVendor(myVendorObj);
+
+                //if record is true, or false, do some stuff
+                if (recordAdded == true)
+                {
+                    //MessageBox.Show("Record added");
+                    rowsAffectedStatusStripLabel.Text = "1 row added";
+                }
+                else
+                {
+                    MessageBox.Show("Record not added");
+                }
+                cleanupUI();
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Record not added");
+                MessageBox.Show(ex.Message, "Addition Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
             }
-            cleanupUI();
         }
 
         public void cleanupUI()
@@ -99,9 +107,8 @@ namespace MeramecNetFlixProject.UI
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                //MessageBox.Show("Error when updating user. \nMake sure a record is selected.", "User Update Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                //throw;
+                MessageBox.Show(ex.Message, "Update Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
             }
         }
 
@@ -130,9 +137,9 @@ namespace MeramecNetFlixProject.UI
                 }
                 cleanupUI();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                MessageBox.Show("Error when deleting user. \nMake sure a record is selected.", "User Deletion Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, "Deletion Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         public void displayUserSelection()
@@ -153,10 +160,9 @@ namespace MeramecNetFlixProject.UI
 
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw;
+                MessageBox.Show(ex.Message, "Selection Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
