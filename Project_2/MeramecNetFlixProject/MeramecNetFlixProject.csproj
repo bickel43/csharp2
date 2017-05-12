@@ -126,6 +126,12 @@
     <Compile Include="UI\VendorForm.Designer.cs">
       <DependentUpon>VendorForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\VendorReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\VendorReport.Designer.cs">
+      <DependentUpon>VendorReport.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -161,11 +167,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Report1.rdlc" />
     <EmbeddedResource Include="UI\Report2.rdlc" />
+    <EmbeddedResource Include="UI\Report3.rdlc" />
     <EmbeddedResource Include="UI\UserReport.resx">
       <DependentUpon>UserReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\VendorForm.resx">
       <DependentUpon>VendorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VendorReport.resx">
+      <DependentUpon>VendorReport.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

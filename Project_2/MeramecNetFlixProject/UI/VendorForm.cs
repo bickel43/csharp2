@@ -169,5 +169,11 @@ namespace MeramecNetFlixProject.UI
         {
             cleanupUI();
         }
+
+        private void vendorReportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            VendorReport vreport = new VendorReport();
+            vreport.ShowDialog();
+        }
     }
 }

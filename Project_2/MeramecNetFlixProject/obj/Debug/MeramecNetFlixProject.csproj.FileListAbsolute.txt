@@ -117,3 +117,5 @@ C:\Users\Keegan\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\M
 C:\Users\Keegan\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\MeramecNetFlixProject.UI.MovieReport.resources
 C:\Users\Keegan\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\MeramecNetFlixProject.UI.Rental.resources
 C:\Users\Keegan\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\MeramecNetFlixProject.UI.VendorForm.resources
+C:\Users\asinanovic\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\MeramecNetFlixProject.UI.VendorForm.resources
+C:\Users\asinanovic\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\MeramecNetFlixProject.UI.VendorReport.resources
