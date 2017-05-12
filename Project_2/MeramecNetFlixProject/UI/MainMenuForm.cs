@@ -35,6 +35,7 @@ namespace MeramecNetFlixProject
 
         public void browseButton_Click(object sender, EventArgs e)
         {
+            //open up MovieData form
             MovieData openMovieData = new MovieData();
             openMovieData.ShowDialog();
         }
@@ -51,6 +52,8 @@ namespace MeramecNetFlixProject
 
         public void DisableMainMenuButtons()
         {
+
+            //disable menu buttons
             browseButton.Enabled = false;
             manageAccountButton.Enabled = false;
             rentButton.Enabled = false;
@@ -58,6 +61,7 @@ namespace MeramecNetFlixProject
 
         public void EnableMainMenuButtons()
         {
+            //enable menu buttons
             browseButton.Enabled = true;
             manageAccountButton.Enabled = true;
             rentButton.Enabled = true;
@@ -66,9 +70,6 @@ namespace MeramecNetFlixProject
 
         private void rentButton_Click(object sender, EventArgs e)
         {
-            //Genre rent = new Genre();
-            //rent.ShowDialog();
-
             MovieRentalForm openRentalForm = new MovieRentalForm();
             openRentalForm.ShowDialog();
         }

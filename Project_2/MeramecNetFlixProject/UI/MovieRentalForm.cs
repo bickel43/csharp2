@@ -25,6 +25,7 @@ namespace MeramecNetFlixProject.UI
         }
         private void SetupDataGrid()
         {
+            //grid adjustments to make it look decent
             rentalDataGridView.ColumnHeadersVisible = false;
             rentalDataGridView.RowHeadersVisible = false;
             rentalDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
@@ -33,6 +34,7 @@ namespace MeramecNetFlixProject.UI
 
             rentalDataGridView.DataSource = MovieDB.GetMovies();
 
+            //enable & disable fields in the grid
             rentalDataGridView.Columns[0].Visible = false; //movie number
             rentalDataGridView.Columns[1].Visible = true; //title
             rentalDataGridView.Columns[2].Visible = false; //description
@@ -51,6 +53,7 @@ namespace MeramecNetFlixProject.UI
             {
                 if (rentalDataGridView.SelectedRows.Count > 0)
                 {
+                    //Assign variables for values in the DB
                     string movieNumber = rentalDataGridView.SelectedRows[0].Cells[0].Value + string.Empty;
                     string movieTitle = rentalDataGridView.SelectedRows[0].Cells[1].Value + string.Empty;
                     string movieDescription = rentalDataGridView.SelectedRows[0].Cells[2].Value + string.Empty;
@@ -66,7 +69,7 @@ namespace MeramecNetFlixProject.UI
                     //Start convert the regular youtube link provided into a link that the
                     //  shockwave player can handle nicely
                     //watch?v= -> v/
-                    //https://www.youtube.com/watch?v=rwDNaK-fwAM //sample link
+                    //https://www.youtube.com/watch?v=rwDNaK-fwAM //sample link for a trailer
                     var newLink = new StringBuilder(movieTrailer);
                     newLink.Remove(24, 8);
                     newLink.Insert(24, "v/");
@@ -74,12 +77,12 @@ namespace MeramecNetFlixProject.UI
                     //End convert & reassignment of the link
 
                     //Currency section for the users display
-                    MessageBox.Show(movieRetailCost);
                     var movieCost = new StringBuilder(movieRetailCost);
                     movieCost.Remove(4, 2);
                     movieCost.Insert(4, "");
                     movieRetailCost = movieCost.ToString();
 
+                    //Assign user viewable attributes some values for what is being selected
                     movieTitleLabel.Text = movieTitle.ToString();
                     movieYearLabel.Text = movieReleaseYear.ToString();
                     movieDescTextBox.Text = movieDescription.ToString();
