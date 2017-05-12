@@ -175,7 +175,7 @@ namespace MeramecNetFlixProject.DataAccessLayer
                 using (myConnection)
                 {
                     myConnection.Open();
-                    sqlString = "UPDATE Movie set movie_title=@movie_title,Description=@Description,movie_year_made=@movie_year_made,genre_id=@genre_id,movie_rating=@movie_rating,media_type=@media_type,movie_retail_cost=@movie_retail_cost,copies_on_hand=@copies_on_hand,image=@image,trailer=@trailer";
+                    sqlString = "UPDATE Movie set movie_title=@movie_title,Description=@Description,movie_year_made=@movie_year_made,genre_id=@genre_id,movie_rating=@movie_rating,media_type=@media_type,movie_retail_cost=@movie_retail_cost,copies_on_hand=@copies_on_hand,image=@image,trailer=@trailer where movie_number=@movie_number";
                     //add joindate=@joindate, to the SQL string
                     //sqlString = "UPDATE Member set firstname=@firstname where number=@number";
 

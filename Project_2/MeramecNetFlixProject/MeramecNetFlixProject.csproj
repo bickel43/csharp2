@@ -102,6 +102,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\MovieRentalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MovieRentalForm.Designer.cs">
+      <DependentUpon>MovieRentalForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\MovieReport.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,6 +164,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\MovieDataForm.resx">
       <DependentUpon>MovieDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MovieRentalForm.resx">
+      <DependentUpon>MovieRentalForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\MovieReport.resx">
       <DependentUpon>MovieReport.cs</DependentUpon>

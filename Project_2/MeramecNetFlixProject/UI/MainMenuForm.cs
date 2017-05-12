@@ -66,8 +66,11 @@ namespace MeramecNetFlixProject
 
         private void rentButton_Click(object sender, EventArgs e)
         {
-            Genre rent = new Genre();
-            rent.ShowDialog();
+            //Genre rent = new Genre();
+            //rent.ShowDialog();
+
+            MovieRentalForm openRentalForm = new MovieRentalForm();
+            openRentalForm.ShowDialog();
         }
     }
 }
