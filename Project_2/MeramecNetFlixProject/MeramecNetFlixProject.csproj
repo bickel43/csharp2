@@ -64,12 +64,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>teamgDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="UI\Comedy.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\Comedy.Designer.cs">
-      <DependentUpon>Comedy.cs</DependentUpon>
-    </Compile>
     <Compile Include="UI\Genre.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,12 +108,6 @@
     <Compile Include="UI\MovieReport.Designer.cs">
       <DependentUpon>MovieReport.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Rental.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\Rental.Designer.cs">
-      <DependentUpon>Rental.cs</DependentUpon>
-    </Compile>
     <Compile Include="UI\UserReport.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,9 +135,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UI\Comedy.resx">
-      <DependentUpon>Comedy.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UI\Genre.resx">
       <DependentUpon>Genre.cs</DependentUpon>
     </EmbeddedResource>
@@ -170,9 +155,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\MovieReport.resx">
       <DependentUpon>MovieReport.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI\Rental.resx">
-      <DependentUpon>Rental.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Report1.rdlc" />
     <EmbeddedResource Include="UI\Report2.rdlc" />

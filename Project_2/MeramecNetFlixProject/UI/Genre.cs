@@ -132,17 +132,7 @@ namespace MeramecNetFlixProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            if (genreNameTextBox.Text == "Action")
-            {
-                Rental action = new Rental();
-                action.ShowDialog();
-            }
-            if (genreNameTextBox.Text == "Comedy")
-            {
-                Comedy comedy = new Comedy();
-                comedy.ShowDialog();
-            }
+         
         
         }
 

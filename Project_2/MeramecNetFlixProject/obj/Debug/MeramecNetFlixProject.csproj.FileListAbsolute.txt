@@ -106,8 +106,6 @@ C:\Users\asinanovic\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\bin\Deb
 C:\Users\asinanovic\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\Interop.ShockwaveFlashObjects.dll
 C:\Users\asinanovic\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\AxInterop.ShockwaveFlashObjects.dll
 C:\Users\asinanovic\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\MeramecNetFlixProject.csproj.ResolveComReference.cache
-C:\Users\asinanovic\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\MeramecNetFlixProject.UI.Rental.resources
-C:\Users\asinanovic\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\MeramecNetFlixProject.UI.Comedy.resources
 C:\Users\Keegan\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\Interop.ShockwaveFlashObjects.dll
 C:\Users\Keegan\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\AxInterop.ShockwaveFlashObjects.dll
 C:\Users\Keegan\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\MeramecNetFlixProject.csproj.ResolveComReference.cache
@@ -121,3 +119,4 @@ C:\Users\asinanovic\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Deb
 C:\Users\asinanovic\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\MeramecNetFlixProject.UI.VendorReport.resources
 C:\Users\Keegan\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\MeramecNetFlixProject.UI.VendorReport.resources
 C:\Users\Keegan\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\MeramecNetFlixProject.UI.MovieRentalForm.resources
+C:\Users\asinanovic\Source\Repos\csharp2\Project_2\MeramecNetFlixProject\obj\Debug\MeramecNetFlixProject.UI.MovieRentalForm.resources
