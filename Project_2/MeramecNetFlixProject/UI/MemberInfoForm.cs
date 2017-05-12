@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using MeramecNetFlixProject.DataAccessLayer;
 using MeramecNetFlixProject.BusinessObjects;
 using MeramecNetFlixProject.UI;
+using System.IO;
+using System.Data.SqlClient;
 
 
 namespace MeramecNetFlixProject
@@ -155,15 +157,23 @@ namespace MeramecNetFlixProject
             memberDataViewGrid.DataSource = MemberDB.GetAllMembers();
             memberNumberTextBox.Text = Convert.ToString(memberDataViewGrid.RowCount + 1);
         }
-
+        string imgLocation = "";
+        //browse local comp for photos
         private void changePhotoButton_Click(object sender, EventArgs e)
         {
+            OpenFileDialog dialog = new OpenFileDialog();
+            dialog.Filter = "png files(*.png)|*.png|jpg files(*.jpg)|*.jpg|All files(*.*)|*.*";
+            if (dialog.ShowDialog()==DialogResult.OK)
+            {
+                imgLocation = dialog.FileName.ToString();
+                userPhoto.ImageLocation = imgLocation;
+            }
             //this does nothing right now
             //OpenFileDialog choosePhoto = new OpenFileDialog();
             //choosePhoto.ShowDialog();
 
             //Throw this messagebox, since it really isnt doing anything productive
-            MessageBox.Show("Feature not yet implemented", "Woah there", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //MessageBox.Show("Feature not yet implemented", "Woah there", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void clearUserInfoButton_Click(object sender, EventArgs e)
@@ -334,6 +344,7 @@ namespace MeramecNetFlixProject
             else
             {
                 memberNumberTextBox.ReadOnly = true;
+      
             }
         }
     }

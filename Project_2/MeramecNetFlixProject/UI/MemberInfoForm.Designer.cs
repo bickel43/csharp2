@@ -94,30 +94,30 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 180);
+            this.label1.Location = new System.Drawing.Point(18, 144);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(131, 20);
+            this.label1.Size = new System.Drawing.Size(117, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Member Number:";
             // 
             // memberNumberTextBox
             // 
-            this.memberNumberTextBox.Location = new System.Drawing.Point(176, 178);
+            this.memberNumberTextBox.Location = new System.Drawing.Point(156, 142);
             this.memberNumberTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.memberNumberTextBox.Name = "memberNumberTextBox";
             this.memberNumberTextBox.ReadOnly = true;
-            this.memberNumberTextBox.Size = new System.Drawing.Size(154, 26);
+            this.memberNumberTextBox.Size = new System.Drawing.Size(137, 22);
             this.memberNumberTextBox.TabIndex = 1;
             // 
             // memberStatusGroupBox
             // 
             this.memberStatusGroupBox.Controls.Add(this.inactiveRadioButton);
             this.memberStatusGroupBox.Controls.Add(this.activeRadioButton);
-            this.memberStatusGroupBox.Location = new System.Drawing.Point(12, 55);
+            this.memberStatusGroupBox.Location = new System.Drawing.Point(11, 44);
             this.memberStatusGroupBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.memberStatusGroupBox.Name = "memberStatusGroupBox";
             this.memberStatusGroupBox.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.memberStatusGroupBox.Size = new System.Drawing.Size(261, 89);
+            this.memberStatusGroupBox.Size = new System.Drawing.Size(232, 71);
             this.memberStatusGroupBox.TabIndex = 2;
             this.memberStatusGroupBox.TabStop = false;
             this.memberStatusGroupBox.Text = "Member Status";
@@ -125,10 +125,10 @@
             // inactiveRadioButton
             // 
             this.inactiveRadioButton.AutoSize = true;
-            this.inactiveRadioButton.Location = new System.Drawing.Point(129, 40);
+            this.inactiveRadioButton.Location = new System.Drawing.Point(115, 32);
             this.inactiveRadioButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.inactiveRadioButton.Name = "inactiveRadioButton";
-            this.inactiveRadioButton.Size = new System.Drawing.Size(89, 24);
+            this.inactiveRadioButton.Size = new System.Drawing.Size(77, 21);
             this.inactiveRadioButton.TabIndex = 1;
             this.inactiveRadioButton.TabStop = true;
             this.inactiveRadioButton.Text = "Inactive";
@@ -137,10 +137,10 @@
             // activeRadioButton
             // 
             this.activeRadioButton.AutoSize = true;
-            this.activeRadioButton.Location = new System.Drawing.Point(20, 40);
+            this.activeRadioButton.Location = new System.Drawing.Point(18, 32);
             this.activeRadioButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.activeRadioButton.Name = "activeRadioButton";
-            this.activeRadioButton.Size = new System.Drawing.Size(77, 24);
+            this.activeRadioButton.Size = new System.Drawing.Size(67, 21);
             this.activeRadioButton.TabIndex = 0;
             this.activeRadioButton.TabStop = true;
             this.activeRadioButton.Text = "Active";
@@ -155,7 +155,8 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(957, 33);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(851, 28);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -164,13 +165,13 @@
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(50, 29);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(44, 24);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(124, 30);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(108, 26);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -179,13 +180,13 @@
             this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.userReportToolStripMenuItem});
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
-            this.viewToolStripMenuItem.Size = new System.Drawing.Size(61, 29);
+            this.viewToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
             this.viewToolStripMenuItem.Text = "View";
             // 
             // userReportToolStripMenuItem
             // 
             this.userReportToolStripMenuItem.Name = "userReportToolStripMenuItem";
-            this.userReportToolStripMenuItem.Size = new System.Drawing.Size(190, 30);
+            this.userReportToolStripMenuItem.Size = new System.Drawing.Size(162, 26);
             this.userReportToolStripMenuItem.Text = "User Report";
             this.userReportToolStripMenuItem.Click += new System.EventHandler(this.userReportToolStripMenuItem_Click);
             // 
@@ -194,228 +195,228 @@
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.helpToolStripMenuItem1});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(61, 29);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // helpToolStripMenuItem1
             // 
             this.helpToolStripMenuItem1.Name = "helpToolStripMenuItem1";
-            this.helpToolStripMenuItem1.Size = new System.Drawing.Size(134, 30);
+            this.helpToolStripMenuItem1.Size = new System.Drawing.Size(116, 26);
             this.helpToolStripMenuItem1.Text = "Help";
             this.helpToolStripMenuItem1.Click += new System.EventHandler(this.helpToolStripMenuItem1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(20, 212);
+            this.label2.Location = new System.Drawing.Point(18, 170);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 20);
+            this.label2.Size = new System.Drawing.Size(72, 17);
             this.label2.TabIndex = 4;
             this.label2.Text = "Join Date:";
             // 
             // joinDateTimePicker
             // 
-            this.joinDateTimePicker.Location = new System.Drawing.Point(176, 212);
+            this.joinDateTimePicker.Location = new System.Drawing.Point(156, 170);
             this.joinDateTimePicker.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.joinDateTimePicker.Name = "joinDateTimePicker";
-            this.joinDateTimePicker.Size = new System.Drawing.Size(313, 26);
+            this.joinDateTimePicker.Size = new System.Drawing.Size(279, 22);
             this.joinDateTimePicker.TabIndex = 5;
             // 
             // firstNameTextBox
             // 
-            this.firstNameTextBox.Location = new System.Drawing.Point(176, 245);
+            this.firstNameTextBox.Location = new System.Drawing.Point(156, 196);
             this.firstNameTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.firstNameTextBox.Name = "firstNameTextBox";
-            this.firstNameTextBox.Size = new System.Drawing.Size(154, 26);
+            this.firstNameTextBox.Size = new System.Drawing.Size(137, 22);
             this.firstNameTextBox.TabIndex = 7;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(20, 248);
+            this.label3.Location = new System.Drawing.Point(18, 198);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(90, 20);
+            this.label3.Size = new System.Drawing.Size(80, 17);
             this.label3.TabIndex = 6;
             this.label3.Text = "First Name:";
             // 
             // lastNameTextBox
             // 
-            this.lastNameTextBox.Location = new System.Drawing.Point(176, 275);
+            this.lastNameTextBox.Location = new System.Drawing.Point(156, 220);
             this.lastNameTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lastNameTextBox.Name = "lastNameTextBox";
-            this.lastNameTextBox.Size = new System.Drawing.Size(154, 26);
+            this.lastNameTextBox.Size = new System.Drawing.Size(137, 22);
             this.lastNameTextBox.TabIndex = 9;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(20, 278);
+            this.label4.Location = new System.Drawing.Point(18, 222);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(90, 20);
+            this.label4.Size = new System.Drawing.Size(80, 17);
             this.label4.TabIndex = 8;
             this.label4.Text = "Last Name:";
             // 
             // addressTextBox
             // 
-            this.addressTextBox.Location = new System.Drawing.Point(176, 308);
+            this.addressTextBox.Location = new System.Drawing.Point(156, 246);
             this.addressTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.addressTextBox.Name = "addressTextBox";
-            this.addressTextBox.Size = new System.Drawing.Size(360, 26);
+            this.addressTextBox.Size = new System.Drawing.Size(320, 22);
             this.addressTextBox.TabIndex = 11;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(20, 311);
+            this.label5.Location = new System.Drawing.Point(18, 249);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(72, 20);
+            this.label5.Size = new System.Drawing.Size(64, 17);
             this.label5.TabIndex = 10;
             this.label5.Text = "Address:";
             // 
             // cityTextBox
             // 
-            this.cityTextBox.Location = new System.Drawing.Point(176, 342);
+            this.cityTextBox.Location = new System.Drawing.Point(156, 274);
             this.cityTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cityTextBox.Name = "cityTextBox";
-            this.cityTextBox.Size = new System.Drawing.Size(198, 26);
+            this.cityTextBox.Size = new System.Drawing.Size(176, 22);
             this.cityTextBox.TabIndex = 13;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(20, 349);
+            this.label6.Location = new System.Drawing.Point(18, 279);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(39, 20);
+            this.label6.Size = new System.Drawing.Size(35, 17);
             this.label6.TabIndex = 12;
             this.label6.Text = "City:";
             // 
             // stateTextBox
             // 
-            this.stateTextBox.Location = new System.Drawing.Point(452, 342);
+            this.stateTextBox.Location = new System.Drawing.Point(402, 274);
             this.stateTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.stateTextBox.Name = "stateTextBox";
-            this.stateTextBox.Size = new System.Drawing.Size(74, 26);
+            this.stateTextBox.Size = new System.Drawing.Size(66, 22);
             this.stateTextBox.TabIndex = 15;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(394, 346);
+            this.label7.Location = new System.Drawing.Point(350, 277);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(52, 20);
+            this.label7.Size = new System.Drawing.Size(45, 17);
             this.label7.TabIndex = 14;
             this.label7.Text = "State:";
             // 
             // zipcodeTextBox
             // 
-            this.zipcodeTextBox.Location = new System.Drawing.Point(616, 342);
+            this.zipcodeTextBox.Location = new System.Drawing.Point(548, 274);
             this.zipcodeTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.zipcodeTextBox.Name = "zipcodeTextBox";
-            this.zipcodeTextBox.Size = new System.Drawing.Size(122, 26);
+            this.zipcodeTextBox.Size = new System.Drawing.Size(109, 22);
             this.zipcodeTextBox.TabIndex = 17;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(544, 346);
+            this.label8.Location = new System.Drawing.Point(484, 277);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(66, 20);
+            this.label8.Size = new System.Drawing.Size(59, 17);
             this.label8.TabIndex = 16;
             this.label8.Text = "Zipcode";
             // 
             // phoneNumberTextBox
             // 
-            this.phoneNumberTextBox.Location = new System.Drawing.Point(176, 375);
+            this.phoneNumberTextBox.Location = new System.Drawing.Point(156, 300);
             this.phoneNumberTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.phoneNumberTextBox.Name = "phoneNumberTextBox";
-            this.phoneNumberTextBox.Size = new System.Drawing.Size(198, 26);
+            this.phoneNumberTextBox.Size = new System.Drawing.Size(176, 22);
             this.phoneNumberTextBox.TabIndex = 19;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(20, 378);
+            this.label9.Location = new System.Drawing.Point(18, 302);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(119, 20);
+            this.label9.Size = new System.Drawing.Size(107, 17);
             this.label9.TabIndex = 18;
             this.label9.Text = "Phone Number:";
             // 
             // emailTextBox
             // 
-            this.emailTextBox.Location = new System.Drawing.Point(452, 375);
+            this.emailTextBox.Location = new System.Drawing.Point(402, 300);
             this.emailTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.emailTextBox.Name = "emailTextBox";
-            this.emailTextBox.Size = new System.Drawing.Size(208, 26);
+            this.emailTextBox.Size = new System.Drawing.Size(185, 22);
             this.emailTextBox.TabIndex = 21;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(382, 382);
+            this.label10.Location = new System.Drawing.Point(340, 306);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(52, 20);
+            this.label10.Size = new System.Drawing.Size(46, 17);
             this.label10.TabIndex = 20;
             this.label10.Text = "Email:";
             // 
             // usernameTextBox
             // 
-            this.usernameTextBox.Location = new System.Drawing.Point(176, 408);
+            this.usernameTextBox.Location = new System.Drawing.Point(156, 326);
             this.usernameTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.usernameTextBox.Name = "usernameTextBox";
-            this.usernameTextBox.Size = new System.Drawing.Size(154, 26);
+            this.usernameTextBox.Size = new System.Drawing.Size(137, 22);
             this.usernameTextBox.TabIndex = 23;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(20, 409);
+            this.label11.Location = new System.Drawing.Point(18, 327);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(87, 20);
+            this.label11.Size = new System.Drawing.Size(77, 17);
             this.label11.TabIndex = 22;
             this.label11.Text = "Username:";
             // 
             // passwordTextBox
             // 
-            this.passwordTextBox.Location = new System.Drawing.Point(452, 408);
+            this.passwordTextBox.Location = new System.Drawing.Point(402, 326);
             this.passwordTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.PasswordChar = '●';
-            this.passwordTextBox.Size = new System.Drawing.Size(150, 26);
+            this.passwordTextBox.Size = new System.Drawing.Size(134, 22);
             this.passwordTextBox.TabIndex = 25;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(352, 409);
+            this.label12.Location = new System.Drawing.Point(313, 327);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(82, 20);
+            this.label12.Size = new System.Drawing.Size(73, 17);
             this.label12.TabIndex = 24;
             this.label12.Text = "Password:";
             // 
             // subscriptionIdTextBox
             // 
-            this.subscriptionIdTextBox.Location = new System.Drawing.Point(789, 405);
+            this.subscriptionIdTextBox.Location = new System.Drawing.Point(701, 324);
             this.subscriptionIdTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.subscriptionIdTextBox.Name = "subscriptionIdTextBox";
-            this.subscriptionIdTextBox.Size = new System.Drawing.Size(154, 26);
+            this.subscriptionIdTextBox.Size = new System.Drawing.Size(137, 22);
             this.subscriptionIdTextBox.TabIndex = 27;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(662, 409);
+            this.label13.Location = new System.Drawing.Point(588, 327);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(122, 20);
+            this.label13.Size = new System.Drawing.Size(107, 17);
             this.label13.TabIndex = 26;
             this.label13.Text = "Subscription ID:";
             // 
             // userPhoto
             // 
             this.userPhoto.Image = ((System.Drawing.Image)(resources.GetObject("userPhoto.Image")));
-            this.userPhoto.Location = new System.Drawing.Point(722, 55);
+            this.userPhoto.Location = new System.Drawing.Point(642, 44);
             this.userPhoto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.userPhoto.Name = "userPhoto";
-            this.userPhoto.Size = new System.Drawing.Size(220, 218);
+            this.userPhoto.Size = new System.Drawing.Size(196, 174);
             this.userPhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.userPhoto.TabIndex = 28;
             this.userPhoto.TabStop = false;
@@ -424,12 +425,12 @@
             // 
             this.changePhotoButton.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.changePhotoButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.changePhotoButton.Location = new System.Drawing.Point(722, 278);
+            this.changePhotoButton.Location = new System.Drawing.Point(642, 222);
             this.changePhotoButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.changePhotoButton.Name = "changePhotoButton";
-            this.changePhotoButton.Size = new System.Drawing.Size(220, 38);
+            this.changePhotoButton.Size = new System.Drawing.Size(196, 30);
             this.changePhotoButton.TabIndex = 29;
-            this.changePhotoButton.Text = "Change Photo";
+            this.changePhotoButton.Text = "Browse";
             this.changePhotoButton.UseVisualStyleBackColor = false;
             this.changePhotoButton.Click += new System.EventHandler(this.changePhotoButton_Click);
             // 
@@ -438,11 +439,11 @@
             this.contactMethodGroupBox.Controls.Add(this.noneRadioButton);
             this.contactMethodGroupBox.Controls.Add(this.emailRadioButton);
             this.contactMethodGroupBox.Controls.Add(this.phoneRadioButton);
-            this.contactMethodGroupBox.Location = new System.Drawing.Point(290, 55);
+            this.contactMethodGroupBox.Location = new System.Drawing.Point(258, 44);
             this.contactMethodGroupBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.contactMethodGroupBox.Name = "contactMethodGroupBox";
             this.contactMethodGroupBox.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.contactMethodGroupBox.Size = new System.Drawing.Size(303, 89);
+            this.contactMethodGroupBox.Size = new System.Drawing.Size(269, 71);
             this.contactMethodGroupBox.TabIndex = 30;
             this.contactMethodGroupBox.TabStop = false;
             this.contactMethodGroupBox.Text = "Contact Method";
@@ -450,10 +451,10 @@
             // noneRadioButton
             // 
             this.noneRadioButton.AutoSize = true;
-            this.noneRadioButton.Location = new System.Drawing.Point(212, 40);
+            this.noneRadioButton.Location = new System.Drawing.Point(188, 32);
             this.noneRadioButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.noneRadioButton.Name = "noneRadioButton";
-            this.noneRadioButton.Size = new System.Drawing.Size(72, 24);
+            this.noneRadioButton.Size = new System.Drawing.Size(63, 21);
             this.noneRadioButton.TabIndex = 4;
             this.noneRadioButton.TabStop = true;
             this.noneRadioButton.Text = "None";
@@ -462,10 +463,10 @@
             // emailRadioButton
             // 
             this.emailRadioButton.AutoSize = true;
-            this.emailRadioButton.Location = new System.Drawing.Point(118, 40);
+            this.emailRadioButton.Location = new System.Drawing.Point(105, 32);
             this.emailRadioButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.emailRadioButton.Name = "emailRadioButton";
-            this.emailRadioButton.Size = new System.Drawing.Size(73, 24);
+            this.emailRadioButton.Size = new System.Drawing.Size(63, 21);
             this.emailRadioButton.TabIndex = 3;
             this.emailRadioButton.TabStop = true;
             this.emailRadioButton.Text = "Email";
@@ -474,10 +475,10 @@
             // phoneRadioButton
             // 
             this.phoneRadioButton.AutoSize = true;
-            this.phoneRadioButton.Location = new System.Drawing.Point(16, 40);
+            this.phoneRadioButton.Location = new System.Drawing.Point(14, 32);
             this.phoneRadioButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.phoneRadioButton.Name = "phoneRadioButton";
-            this.phoneRadioButton.Size = new System.Drawing.Size(80, 24);
+            this.phoneRadioButton.Size = new System.Drawing.Size(70, 21);
             this.phoneRadioButton.TabIndex = 2;
             this.phoneRadioButton.TabStop = true;
             this.phoneRadioButton.Text = "Phone";
@@ -486,10 +487,10 @@
             // addUserButton
             // 
             this.addUserButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addUserButton.Location = new System.Drawing.Point(108, 672);
+            this.addUserButton.Location = new System.Drawing.Point(96, 538);
             this.addUserButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.addUserButton.Name = "addUserButton";
-            this.addUserButton.Size = new System.Drawing.Size(144, 52);
+            this.addUserButton.Size = new System.Drawing.Size(128, 42);
             this.addUserButton.TabIndex = 32;
             this.addUserButton.Text = "Add";
             this.addUserButton.UseVisualStyleBackColor = true;
@@ -498,10 +499,10 @@
             // updateUserButton
             // 
             this.updateUserButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.updateUserButton.Location = new System.Drawing.Point(258, 672);
+            this.updateUserButton.Location = new System.Drawing.Point(229, 538);
             this.updateUserButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.updateUserButton.Name = "updateUserButton";
-            this.updateUserButton.Size = new System.Drawing.Size(144, 52);
+            this.updateUserButton.Size = new System.Drawing.Size(128, 42);
             this.updateUserButton.TabIndex = 34;
             this.updateUserButton.Text = "Update";
             this.updateUserButton.UseVisualStyleBackColor = true;
@@ -510,10 +511,10 @@
             // deleteUserButton
             // 
             this.deleteUserButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.deleteUserButton.Location = new System.Drawing.Point(408, 672);
+            this.deleteUserButton.Location = new System.Drawing.Point(363, 538);
             this.deleteUserButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.deleteUserButton.Name = "deleteUserButton";
-            this.deleteUserButton.Size = new System.Drawing.Size(144, 52);
+            this.deleteUserButton.Size = new System.Drawing.Size(128, 42);
             this.deleteUserButton.TabIndex = 35;
             this.deleteUserButton.Text = "Delete";
             this.deleteUserButton.UseVisualStyleBackColor = true;
@@ -522,10 +523,10 @@
             // clearUserInfoButton
             // 
             this.clearUserInfoButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.clearUserInfoButton.Location = new System.Drawing.Point(560, 672);
+            this.clearUserInfoButton.Location = new System.Drawing.Point(498, 538);
             this.clearUserInfoButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.clearUserInfoButton.Name = "clearUserInfoButton";
-            this.clearUserInfoButton.Size = new System.Drawing.Size(144, 52);
+            this.clearUserInfoButton.Size = new System.Drawing.Size(128, 42);
             this.clearUserInfoButton.TabIndex = 36;
             this.clearUserInfoButton.Text = "Clear";
             this.clearUserInfoButton.UseVisualStyleBackColor = true;
@@ -534,10 +535,10 @@
             // exitButton
             // 
             this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.exitButton.Location = new System.Drawing.Point(710, 672);
+            this.exitButton.Location = new System.Drawing.Point(631, 538);
             this.exitButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(144, 52);
+            this.exitButton.Size = new System.Drawing.Size(128, 42);
             this.exitButton.TabIndex = 37;
             this.exitButton.Text = "Exit";
             this.exitButton.UseVisualStyleBackColor = true;
@@ -549,10 +550,10 @@
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.rowsAffectedStatusStrip,
             this.rowsAffectedCountLabel});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 752);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 601);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Padding = new System.Windows.Forms.Padding(2, 0, 14, 0);
-            this.statusStrip1.Size = new System.Drawing.Size(957, 30);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(2, 0, 12, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(851, 25);
             this.statusStrip1.TabIndex = 38;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -560,23 +561,23 @@
             // 
             this.rowsAffectedStatusStrip.BackColor = System.Drawing.SystemColors.Control;
             this.rowsAffectedStatusStrip.Name = "rowsAffectedStatusStrip";
-            this.rowsAffectedStatusStrip.Size = new System.Drawing.Size(110, 25);
+            this.rowsAffectedStatusStrip.Size = new System.Drawing.Size(91, 20);
             this.rowsAffectedStatusStrip.Text = "Last Activity:";
             // 
             // rowsAffectedCountLabel
             // 
             this.rowsAffectedCountLabel.BackColor = System.Drawing.SystemColors.Control;
             this.rowsAffectedCountLabel.Name = "rowsAffectedCountLabel";
-            this.rowsAffectedCountLabel.Size = new System.Drawing.Size(159, 25);
+            this.rowsAffectedCountLabel.Size = new System.Drawing.Size(131, 20);
             this.rowsAffectedCountLabel.Text = "No Changes Made";
             // 
             // viewPasswordImage
             // 
             this.viewPasswordImage.Image = ((System.Drawing.Image)(resources.GetObject("viewPasswordImage.Image")));
-            this.viewPasswordImage.Location = new System.Drawing.Point(608, 408);
+            this.viewPasswordImage.Location = new System.Drawing.Point(540, 326);
             this.viewPasswordImage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.viewPasswordImage.Name = "viewPasswordImage";
-            this.viewPasswordImage.Size = new System.Drawing.Size(33, 29);
+            this.viewPasswordImage.Size = new System.Drawing.Size(29, 23);
             this.viewPasswordImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.viewPasswordImage.TabIndex = 39;
             this.viewPasswordImage.TabStop = false;
@@ -585,21 +586,22 @@
             // memberDataViewGrid
             // 
             this.memberDataViewGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.memberDataViewGrid.Location = new System.Drawing.Point(22, 462);
+            this.memberDataViewGrid.Location = new System.Drawing.Point(20, 370);
             this.memberDataViewGrid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.memberDataViewGrid.Name = "memberDataViewGrid";
             this.memberDataViewGrid.RowTemplate.Height = 24;
             this.memberDataViewGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.memberDataViewGrid.Size = new System.Drawing.Size(900, 188);
+            this.memberDataViewGrid.Size = new System.Drawing.Size(800, 150);
             this.memberDataViewGrid.TabIndex = 40;
             this.memberDataViewGrid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.memberDataViewGrid_CellClick);
             // 
             // overrideMemberNumber
             // 
             this.overrideMemberNumber.AutoSize = true;
-            this.overrideMemberNumber.Location = new System.Drawing.Point(336, 178);
+            this.overrideMemberNumber.Location = new System.Drawing.Point(299, 142);
+            this.overrideMemberNumber.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.overrideMemberNumber.Name = "overrideMemberNumber";
-            this.overrideMemberNumber.Size = new System.Drawing.Size(216, 24);
+            this.overrideMemberNumber.Size = new System.Drawing.Size(194, 21);
             this.overrideMemberNumber.TabIndex = 41;
             this.overrideMemberNumber.Text = "Override Member Number";
             this.overrideMemberNumber.UseVisualStyleBackColor = true;
@@ -607,11 +609,11 @@
             // 
             // MemberInfo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(957, 782);
+            this.ClientSize = new System.Drawing.Size(851, 626);
             this.Controls.Add(this.overrideMemberNumber);
             this.Controls.Add(this.memberDataViewGrid);
             this.Controls.Add(this.viewPasswordImage);
@@ -654,7 +656,7 @@
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "MemberInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
