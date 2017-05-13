@@ -19,7 +19,7 @@ namespace MeramecNetFlixProject.UI
             this.labelVersion.Text = String.Format("Version {0}", AssemblyVersion);
             this.labelCopyright.Text = "© 2017";
             this.labelCompanyName.Text = "We C# ™";
-            this.textBoxDescription.Text = "Other developers just don't see what we see. WE C#!  ( you wanted something cheesy) lol";
+            this.textBoxDescription.Text = "Developed by: Keegan Bickel & Amir Sinanovic";
         }
 
         #region Assembly Attribute Accessors

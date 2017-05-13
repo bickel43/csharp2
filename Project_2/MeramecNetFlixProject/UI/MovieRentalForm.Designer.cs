@@ -219,11 +219,11 @@
         private AxShockwaveFlashObjects.AxShockwaveFlash movieTrailerContainer;
         private System.Windows.Forms.TextBox movieDescTextBox;
         private System.Windows.Forms.Button rentalButton;
-        private System.Windows.Forms.Button exitButton;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.Label rentalPrice;
         private System.Windows.Forms.ToolStripMenuItem foodAroundMeToolStripMenuItem;
+        public System.Windows.Forms.Button exitButton;
     }
 }
