@@ -73,5 +73,12 @@ namespace MeramecNetFlixProject
             MovieRentalForm openRentalForm = new MovieRentalForm();
             openRentalForm.ShowDialog();
         }
+
+        private void linkDeveloper_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            AboutDeveloper about = new AboutDeveloper();
+            about.ShowDialog();
+
+        }
     }
 }

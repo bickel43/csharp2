@@ -34,6 +34,7 @@
             this.exitMovieButton = new System.Windows.Forms.Button();
             this.signInButton = new System.Windows.Forms.Button();
             this.rentButton = new System.Windows.Forms.Button();
+            this.linkDeveloper = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // manageAccountButton
@@ -43,7 +44,7 @@
             this.manageAccountButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.manageAccountButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.manageAccountButton.Location = new System.Drawing.Point(458, 350);
-            this.manageAccountButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.manageAccountButton.Margin = new System.Windows.Forms.Padding(4);
             this.manageAccountButton.Name = "manageAccountButton";
             this.manageAccountButton.Size = new System.Drawing.Size(214, 41);
             this.manageAccountButton.TabIndex = 0;
@@ -58,7 +59,7 @@
             this.browseButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.browseButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.browseButton.Location = new System.Drawing.Point(236, 350);
-            this.browseButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.browseButton.Margin = new System.Windows.Forms.Padding(4);
             this.browseButton.Name = "browseButton";
             this.browseButton.Size = new System.Drawing.Size(214, 41);
             this.browseButton.TabIndex = 1;
@@ -73,7 +74,7 @@
             this.exitMovieButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitMovieButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.exitMovieButton.Location = new System.Drawing.Point(129, 399);
-            this.exitMovieButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.exitMovieButton.Margin = new System.Windows.Forms.Padding(4);
             this.exitMovieButton.Name = "exitMovieButton";
             this.exitMovieButton.Size = new System.Drawing.Size(214, 41);
             this.exitMovieButton.TabIndex = 2;
@@ -88,7 +89,7 @@
             this.signInButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signInButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.signInButton.Location = new System.Drawing.Point(14, 350);
-            this.signInButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.signInButton.Margin = new System.Windows.Forms.Padding(4);
             this.signInButton.Name = "signInButton";
             this.signInButton.Size = new System.Drawing.Size(214, 41);
             this.signInButton.TabIndex = 4;
@@ -103,13 +104,27 @@
             this.rentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rentButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.rentButton.Location = new System.Drawing.Point(351, 399);
-            this.rentButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rentButton.Margin = new System.Windows.Forms.Padding(4);
             this.rentButton.Name = "rentButton";
             this.rentButton.Size = new System.Drawing.Size(214, 41);
             this.rentButton.TabIndex = 5;
             this.rentButton.Text = "Rent ";
             this.rentButton.UseVisualStyleBackColor = false;
             this.rentButton.Click += new System.EventHandler(this.rentButton_Click);
+            // 
+            // linkDeveloper
+            // 
+            this.linkDeveloper.AutoSize = true;
+            this.linkDeveloper.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkDeveloper.Image = ((System.Drawing.Image)(resources.GetObject("linkDeveloper.Image")));
+            this.linkDeveloper.LinkColor = System.Drawing.Color.Gray;
+            this.linkDeveloper.Location = new System.Drawing.Point(10, 501);
+            this.linkDeveloper.Name = "linkDeveloper";
+            this.linkDeveloper.Size = new System.Drawing.Size(133, 20);
+            this.linkDeveloper.TabIndex = 6;
+            this.linkDeveloper.TabStop = true;
+            this.linkDeveloper.Text = "About Developer";
+            this.linkDeveloper.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkDeveloper_LinkClicked);
             // 
             // MainMenu
             // 
@@ -119,18 +134,20 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1167, 530);
+            this.Controls.Add(this.linkDeveloper);
             this.Controls.Add(this.rentButton);
             this.Controls.Add(this.signInButton);
             this.Controls.Add(this.exitMovieButton);
             this.Controls.Add(this.browseButton);
             this.Controls.Add(this.manageAccountButton);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainMenu";
             this.Load += new System.EventHandler(this.MainMenu_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -141,5 +158,6 @@
         private System.Windows.Forms.Button exitMovieButton;
         private System.Windows.Forms.Button signInButton;
         private System.Windows.Forms.Button rentButton;
+        private System.Windows.Forms.LinkLabel linkDeveloper;
     }
 }
