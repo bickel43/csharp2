@@ -115,5 +115,10 @@ namespace MeramecNetFlixProject.UI
         {
             this.Close();
         }
+
+        private void foodAroundMeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.google.com/search?q=food+around+me&rlz=1C1NHXL_enUS723US723&oq=food+around+me&aqs=chrome..69i57j0l5.2113j0j7&sourceid=chrome&ie=UTF-8");
+        }
     }
 }
